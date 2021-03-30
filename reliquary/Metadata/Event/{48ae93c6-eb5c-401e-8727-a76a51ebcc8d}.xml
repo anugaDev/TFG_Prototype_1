@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="Event" id="{48ae93c6-eb5c-401e-8727-a76a51ebcc8d}">
 		<property name="name">
-			<value>Relic</value>
+			<value>Green Relic</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -33,6 +33,7 @@
 		</relationship>
 		<relationship name="parameters">
 			<destination>{8391d13c-c722-4f44-91e9-88d9766a071f}</destination>
+			<destination>{6d981620-b51c-4d5b-8176-2050278e56bc}</destination>
 		</relationship>
 		<relationship name="banks">
 			<destination>{beaf763d-514f-4324-a76f-c8752fe197f2}</destination>
@@ -66,10 +67,19 @@
 			<destination>{8405aaa8-8a29-423d-a26a-ab5fe5f0ab0d}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{4515c731-674e-4371-b316-17eda097726d}" />
+	<object class="Timeline" id="{4515c731-674e-4371-b316-17eda097726d}">
+		<relationship name="markers">
+			<destination>{5d6e76d3-b386-414e-b445-c2d02123f34c}</destination>
+		</relationship>
+	</object>
 	<object class="ParameterProxy" id="{8391d13c-c722-4f44-91e9-88d9766a071f}">
 		<relationship name="preset">
 			<destination>{e380d7ab-6df0-4b8d-99a3-51a4f08c779d}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterProxy" id="{6d981620-b51c-4d5b-8176-2050278e56bc}">
+		<relationship name="preset">
+			<destination>{4dd0fcd9-c758-4723-8b75-bfa472a2419f}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{d7545b2f-7f66-4f3c-842d-ce25a88ae550}">
@@ -101,6 +111,20 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{d7545b2f-7f66-4f3c-842d-ce25a88ae550}</destination>
+		</relationship>
+	</object>
+	<object class="TempoMarker" id="{5d6e76d3-b386-414e-b445-c2d02123f34c}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="tempo">
+			<value>100</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{4515c731-674e-4371-b316-17eda097726d}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{4cfd405f-88d5-4957-947e-3a479261f19d}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{dafd266e-d0e0-4668-8093-b47eed21eacb}">

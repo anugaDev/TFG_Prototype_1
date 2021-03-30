@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Reliquary.Relic
+namespace Reliquary.Sound
 {
-    public class RelicInstaller : MonoBehaviour
+    public class ListenerEntity
     {
-        public void Install()
+        public void Listen()
         {
             
         }

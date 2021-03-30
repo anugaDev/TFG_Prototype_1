@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="Event" id="{98f0e5af-b8f2-47cb-bc2f-f799d2736a44}">
 		<property name="name">
-			<value>Music</value>
+			<value>Master Music</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -66,7 +66,11 @@
 			<destination>{24aa7750-65fa-4c63-b3bc-3b87f4181f4f}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{f14b4a16-a030-491e-b755-34bba5248d08}" />
+	<object class="Timeline" id="{f14b4a16-a030-491e-b755-34bba5248d08}">
+		<relationship name="markers">
+			<destination>{0746ccd5-1b69-4761-b420-ba2cbc48439a}</destination>
+		</relationship>
+	</object>
 	<object class="ParameterProxy" id="{3c4a62b8-9573-40fb-a4cf-ead16f810ffd}">
 		<relationship name="preset">
 			<destination>{6caecca5-0cfb-46a3-ba50-a10673af0836}</destination>
@@ -101,6 +105,20 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{2adac6d3-6914-47b4-ba66-2efdfb5242c7}</destination>
+		</relationship>
+	</object>
+	<object class="TempoMarker" id="{0746ccd5-1b69-4761-b420-ba2cbc48439a}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="tempo">
+			<value>100</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{f14b4a16-a030-491e-b755-34bba5248d08}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{33b655d0-397c-4a7c-af85-ada225403317}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{72f21cfb-e996-4efb-a82e-b063d864269a}">

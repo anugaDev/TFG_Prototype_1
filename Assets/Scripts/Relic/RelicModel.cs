@@ -2,17 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RelicModel : MonoBehaviour
+namespace Reliquary.Relic
 {
-    // Start is called before the first frame update
-    void Start()
+    public class RelicModel
     {
-        
-    }
+        private bool isTaken;
+        private bool isPlaced;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public bool IsTaken
+        {
+            get => isTaken;
+            set => isTaken = value;
+        }
+
+        public bool IsPlaced
+        {
+            get => isPlaced;
+            set => isPlaced = value;
+        }
+
+        public RelicModel()
+        {
+            
+        }
     }
 }

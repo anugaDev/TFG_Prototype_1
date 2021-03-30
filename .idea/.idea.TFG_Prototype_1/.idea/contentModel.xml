@@ -152,14 +152,20 @@
             <e p="PlayerMovement.cs" t="Include" />
           </e>
           <e p="Relic" t="Include">
+            <e p="RelicController.cs" t="Include" />
             <e p="RelicInstaller.cs" t="Include" />
-            <e p="RelicMediator.cs" t="Include" />
             <e p="RelicModel.cs" t="Include" />
             <e p="RelicView.cs" t="Include" />
           </e>
           <e p="Sound" t="Include">
+            <e p="ListenerEntity.cs" t="Include" />
             <e p="SoundController.cs" t="Include" />
-            <e p="SoundElement.cs" t="Include" />
+            <e p="SoundElement" t="Include">
+              <e p="ASoundElement.cs" t="Include" />
+              <e p="LoopedSoundElement.cs" t="Include" />
+              <e p="OneShootSoundElement.cs" t="Include" />
+            </e>
+            <e p="SoundEmittedCommand.cs" t="Include" />
           </e>
         </e>
       </e>
