@@ -1,29 +1,62 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using System.Text;
-using FMOD;
+using System.Linq;
 using FMOD.Studio;
 using FMODUnity;
+using UniRx;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
+using STOP_MODE = FMOD.Studio.STOP_MODE;
+using Reliquary.Sound.Studio;
 
 namespace Reliquary.Sound
 {
     public class SoundController : MonoBehaviour
     {
         [SerializeField] private ASoundElement masterTrack;
+        [FMODUnity.BankRef] [SerializeField] private string[] studioBanks;
+
+
+        public const int START_EVENTS_ON_BAR = 1;
+
         private List<ASoundElement> aSoundElements;
-        private string[] busList;
+        private static Dictionary<ASoundElement, EventInstance> beatPendingEvents = new Dictionary<ASoundElement, EventInstance>();
 
-        private Dictionary<ASoundElement, EventInstance> pendingEvents;
+        private StudioEventProxy masterTrackProxy;
 
-        private void Awake()
+
+        private void Start()
         {
-          SceneMasterTrackSetUp();
+            LoadStudioBanks();   
+            masterTrack.SetNewEvent();
+            masterTrackProxy = new StudioEventProxy(masterTrack.GetEvent());
+
+            masterTrackProxy.eventTimelineInfo.bar.AsObservable().Subscribe(newBar => OnBarChanged(newBar));
+            masterTrackProxy.eventTimelineInfo.beat.AsObservable().Subscribe(newBeat => OnBeatChanged(newBeat));
+
+            
+            PlayElement(masterTrack);
+
+        }  
+
+        private void Update()
+        {
         }
 
+        private void LoadStudioBanks()
+        {
+            foreach (var bankID in studioBanks)
+            {
+                RuntimeManager.LoadBank(bankID);
+
+                var bank = new Bank();
+
+                RuntimeManager.StudioSystem.getBank(bankID, out bank);
+
+                bank.loadSampleData();
+
+            }
+        }
         public void StopAllElements()
         {
             
@@ -35,15 +68,13 @@ namespace Reliquary.Sound
 
         }
 
-        public void PlayElement(ASoundElement soundElement)
+        public static void PlayElement(ASoundElement soundElement)
         {
             var  soundEvent = soundElement.GetEvent();
 
-            if (soundElement.playOnTempo)
+            if (soundElement.PlayOnBeat)
             {
-                pendingEvents.Add(soundElement,soundEvent);
-                
-                
+                beatPendingEvents.Add(soundElement,soundEvent);
             }
             else
             {
@@ -51,45 +82,57 @@ namespace Reliquary.Sound
             }
         }
 
-        public void StopElement(ASoundElement aSoundElement)
+        public void StopElement(ASoundElement soundElement)
         {
-
+            soundElement.GetEvent().stop(STOP_MODE.IMMEDIATE);
         }
 
-        private void SceneMasterTrackSetUp()
+        private void OnBeatChanged(float newBeat)
         {
-            masterTrack.SetNewEvent();
-            PlayElement(masterTrack);
             
-            var cb = new FMOD.Studio.EVENT_CALLBACK(StudioBeatCallback);
-            masterTrack.GetEvent().setCallback(cb, FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_BEAT);
-        }
-        
-        private FMOD.RESULT StudioBeatCallback(FMOD.Studio.EVENT_CALLBACK_TYPE type, IntPtr eventInstance, IntPtr parameters)
-        {
-            Debug.Log("BEAT CALLBACK");
-            if (type == FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_MARKER)
+            foreach (var pendingEvent in beatPendingEvents.ToList())
             {
-                FMOD.Studio.TIMELINE_MARKER_PROPERTIES marker = (FMOD.Studio.TIMELINE_MARKER_PROPERTIES)Marshal.PtrToStructure(parameters, typeof(FMOD.Studio.TIMELINE_MARKER_PROPERTIES));
-                //IntPtr namePtr = parameters; 
-                int nameLen = 0;
-                while (Marshal.ReadByte(parameters, nameLen) != 0) ++nameLen;
-                byte[] buffer = new byte[nameLen];
-                Marshal.Copy(parameters, buffer, 0, buffer.Length);
-                string name = Encoding.UTF8.GetString(buffer, 0, nameLen);
-                if (name == "HIGH")
+                if (pendingEvent.Key.BeatToPlayOn == newBeat &&
+                    masterTrackProxy.eventTimelineInfo.bar.Value == START_EVENTS_ON_BAR)
                 {
-                    UnityEngine.Debug.Log("Reached high intensity marker");
+                    var result = new EventDescription();
+                    pendingEvent.Value.start();
+                    Debug.Log("PENDING EVENT STARTED . Element" + pendingEvent.Key.EventName + " , " +
+                              pendingEvent.Value.getDescription(out result));
+
+                    RuntimeManager.StudioSystem.update();
+                    
+                    beatPendingEvents.Remove(pendingEvent.Key);
+
                 }
             }
-            if (type == FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_BEAT)
-            {
-                FMOD.Studio.TIMELINE_BEAT_PROPERTIES beat = (FMOD.Studio.TIMELINE_BEAT_PROPERTIES)Marshal.PtrToStructure(parameters, typeof(FMOD.Studio.TIMELINE_BEAT_PROPERTIES));
-            }
-            return FMOD.RESULT.OK;
         }
         
+
+        private void OnBarChanged(float newBar)
+        {
+            
+        }
+        private void OnGUI()
+        {
+            GUILayout.Box(String.Format("Current Beat = {0}, Currentbar = {1}",
+                
+                masterTrackProxy.eventTimelineInfo.beat.Value,
+                masterTrackProxy.eventTimelineInfo.bar.Value
+            ));
+        }
         
+        private void OnDestroy()
+        {
+            masterTrack.GetEvent().stop(STOP_MODE.IMMEDIATE);
+            masterTrack.GetEvent().release();
+            masterTrack.GetEvent().setUserData(IntPtr.Zero);
+            
+	
+           masterTrackProxy.OnDestroy();
+        }
+
+       
     }
     
 

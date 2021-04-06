@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{e9870633-fca5-47f6-b5c4-3a7b9562c70f}">
+		<property name="assetPath">
+			<value>track_greenRelic_Green Relic-St_1.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>19.041678004535147</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6175ec48-4289-4d20-b7f3-b76219449767}</destination>
+		</relationship>
+	</object>
+</objects>

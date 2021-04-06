@@ -9,8 +9,10 @@ namespace Reliquary.Relic
         private readonly RelicModel relicModel;
         private readonly RelicView relicView;
         
-        public RelicController()
+        public RelicController(RelicModel _relicModel, RelicView _relicView)
         {
+            relicModel = _relicModel;
+            relicView = _relicView;
 
         }
     }

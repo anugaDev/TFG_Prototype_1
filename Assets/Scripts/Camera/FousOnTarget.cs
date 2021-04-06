@@ -20,7 +20,7 @@ public class FousOnTarget : MonoBehaviour
     }
     private void UpdatePosition()
     {
-        print("UpdateCamera");
+        //print("UpdateCamera");
         Vector3 desiredPosition = actualTarget.position;
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
         smoothedPosition.y = transform.position.y;

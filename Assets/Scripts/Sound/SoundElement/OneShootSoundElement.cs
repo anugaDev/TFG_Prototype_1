@@ -9,7 +9,7 @@ namespace Reliquary.Sound
 
     public class OneShootSoundElement : ASoundElement
     {
-        private List<EventInstance> studioEventsPool;
+        private List<EventInstance> eventPool;
         
         public override EventInstance GetEvent()
         {
@@ -17,12 +17,24 @@ namespace Reliquary.Sound
         }
         private EventInstance GetEventFromPool()
         {
+            var eventPlaybackState = PLAYBACK_STATE.PLAYING;
+            foreach (var eventInstance in eventPool)
+            {
+                eventInstance.getPlaybackState(out eventPlaybackState);
+                
+                if (eventPlaybackState == PLAYBACK_STATE.STOPPED || eventPlaybackState == PLAYBACK_STATE.STOPPING)
+                {
+                    return eventInstance;
+                }
+            }
+            
             SetNewEvent();
-            return studioEventsPool[studioEventsPool.Count-1];
+            return eventPool[eventPool.Count-1];
         }
         public override void SetNewEvent()
         {
-            studioEventsPool.Add(FMODUnity.RuntimeManager.CreateInstance(eventName));
+            
+            eventPool.Add(FMODUnity.RuntimeManager.CreateInstance(eventName));
 
         }
 
