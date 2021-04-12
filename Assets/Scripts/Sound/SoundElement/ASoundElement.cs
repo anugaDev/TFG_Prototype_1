@@ -18,13 +18,30 @@ namespace Reliquary.Sound
         [SerializeField] private bool playOnBeat;
         [SerializeField] private int beatToPlayOn;
 
+        [SerializeField] protected SoundParameter[] soundParameters;
+
+        public void SetDefaultParameters()
+        {
+            foreach (var parameter in soundParameters)
+            {
+                parameter.SetDefault();
+            }
+        }
+
         public bool PlayOnBeat => playOnBeat;
         public int BeatToPlayOn => beatToPlayOn;
         
         public abstract EventInstance GetEvent();
 
         public abstract void SetNewEvent();
+
+        public abstract void StopEvent();
         
         public string EventName => eventName;
+
+        private void OnDisable()
+        {
+            StopEvent();
+        }
     }
 }

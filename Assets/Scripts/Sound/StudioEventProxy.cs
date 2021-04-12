@@ -25,12 +25,9 @@ namespace Reliquary.Sound.Studio
             
         }
         
-        FMOD.RESULT result;
-        FMOD.Studio.System system;
-        
-    
         public EventTimelineInfo eventTimelineInfo;
-        GCHandle timelineHandle;
+        
+        private GCHandle timelineHandle;
     
         FMOD.Studio.EVENT_CALLBACK beatCallback;
     
@@ -45,10 +42,9 @@ namespace Reliquary.Sound.Studio
             eventInstance.setCallback(beatCallback, FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_BEAT);
     
     
-        }
-    
+        }    
         [AOT.MonoPInvokeCallback(typeof(FMOD.Studio.EVENT_CALLBACK))]
-        static FMOD.RESULT StudioBeatEvent(FMOD.Studio.EVENT_CALLBACK_TYPE type, IntPtr eventInstance, IntPtr parameters)
+        private static FMOD.RESULT StudioBeatEvent(FMOD.Studio.EVENT_CALLBACK_TYPE type, IntPtr eventInstance, IntPtr parameters)
         {
     
             FMOD.Studio.EventInstance instance = new FMOD.Studio.EventInstance(eventInstance);

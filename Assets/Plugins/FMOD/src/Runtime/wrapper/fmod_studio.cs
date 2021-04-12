@@ -1379,6 +1379,7 @@ namespace FMOD.Studio
         }
 
         #endregion
+
     }
 
     public struct Bus

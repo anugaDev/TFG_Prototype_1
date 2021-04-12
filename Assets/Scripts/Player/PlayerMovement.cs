@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Reliquary.Player;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -23,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 direction;
     private float currentSpeed;
     private Rigidbody playerRb;
+
+    public OnPlayerMovedCommand onPlayerMovedCommand;
     private void Start()
     {
         playerRb = GetComponent<Rigidbody>();
@@ -65,7 +68,9 @@ public class PlayerMovement : MonoBehaviour
         movement *= currentSpeed * Time.fixedDeltaTime;
         playerRb.velocity = movement;
 
-        
+        onPlayerMovedCommand.Execute(transform.position);
+
+
     }
     private void RotateTowardsDirection()
     {

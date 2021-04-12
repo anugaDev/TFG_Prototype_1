@@ -38,11 +38,6 @@ namespace Reliquary.Sound
             PlayElement(masterTrack);
 
         }  
-
-        private void Update()
-        {
-        }
-
         private void LoadStudioBanks()
         {
             foreach (var bankID in studioBanks)
@@ -59,11 +54,14 @@ namespace Reliquary.Sound
         }
         public void StopAllElements()
         {
-            
+            foreach (var element in aSoundElements)
+            {
+                
+            }
 
         }
 
-        public void ResumeSoundElements()
+        public void ResumeSoundElements(string bankName)
         {
 
         }
@@ -84,7 +82,7 @@ namespace Reliquary.Sound
 
         public void StopElement(ASoundElement soundElement)
         {
-            soundElement.GetEvent().stop(STOP_MODE.IMMEDIATE);
+            soundElement.StopEvent();
         }
 
         private void OnBeatChanged(float newBeat)

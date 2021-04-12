@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using FMOD;
 using FMOD.Studio;
 using Reliquary.Sound;
 using UnityEngine;
@@ -14,6 +16,27 @@ namespace Reliquary.Sound
         public override EventInstance GetEvent()
         {
             return GetEventFromPool();
+        }
+        
+        public override void SetNewEvent()
+        {
+            
+            eventPool.Add(FMODUnity.RuntimeManager.CreateInstance(eventName));
+
+        }
+
+        public override void StopEvent()
+        {
+            var eventPlaybackState = PLAYBACK_STATE.PLAYING;
+            foreach (var eventInstance in eventPool)
+            {
+                eventInstance.getPlaybackState(out eventPlaybackState);
+
+                if (eventPlaybackState == PLAYBACK_STATE.PLAYING)
+                {
+                    eventInstance.stop(STOP_MODE.IMMEDIATE);
+                }
+            }
         }
         private EventInstance GetEventFromPool()
         {
@@ -31,13 +54,5 @@ namespace Reliquary.Sound
             SetNewEvent();
             return eventPool[eventPool.Count-1];
         }
-        public override void SetNewEvent()
-        {
-            
-            eventPool.Add(FMODUnity.RuntimeManager.CreateInstance(eventName));
-
-        }
-
-
     }
 }

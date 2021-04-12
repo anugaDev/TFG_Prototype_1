@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMOD;
 using FMOD.Studio;
 using Reliquary.Sound;
 using UnityEngine;
+using STOP_MODE = FMODUnity.STOP_MODE;
 
 public class LoopedSoundElement : ASoundElement
 {
@@ -34,5 +36,10 @@ public class LoopedSoundElement : ASoundElement
         FMODUnity.RuntimeManager.StudioSystem.update();
 
         studioEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+    }
+
+    public override void StopEvent()
+    {
+        studioEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 }

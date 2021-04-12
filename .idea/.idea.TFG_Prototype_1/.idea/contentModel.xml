@@ -501,11 +501,20 @@
           <e p="Camera" t="Include">
             <e p="FousOnTarget.cs" t="Include" />
           </e>
-          <e p="Observer" t="Include">
-            <e p="IObserver.cs" t="Include" />
+          <e p="Hub" t="Include">
+            <e p="HubController.cs" t="Include" />
+            <e p="HubInstaller.cs" t="Include" />
+            <e p="HubModel.cs" t="Include" />
+            <e p="HubView.cs" t="Include" />
           </e>
+          <e p="MainSceneInstaller.cs" t="Include" />
           <e p="Player" t="Include">
+            <e p="OnPlayerMovedCommand.cs" t="Include" />
+            <e p="PlayerController.cs" t="Include" />
+            <e p="PlayerInstaller.cs" t="Include" />
+            <e p="PlayerModel.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
+            <e p="PlayerView.cs" t="Include" />
           </e>
           <e p="Relic" t="Include">
             <e p="RelicController.cs" t="Include" />
@@ -522,6 +531,9 @@
               <e p="OneShootSoundElement.cs" t="Include" />
             </e>
             <e p="SoundEmittedCommand.cs" t="Include" />
+            <e p="SoundParameter" t="Include">
+              <e p="SoundParameter.cs" t="Include" />
+            </e>
             <e p="StudioEventProxy.cs" t="Include" />
           </e>
           <e p="Utils" t="Include">

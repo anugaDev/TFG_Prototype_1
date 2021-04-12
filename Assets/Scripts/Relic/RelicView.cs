@@ -8,6 +8,7 @@ namespace Reliquary.Relic
     public class RelicView : MonoBehaviour
     {
         [SerializeField] private ASoundElement loop;
+        [SerializeField] private SoundParameter taken;
 
 
         private void Awake()
@@ -26,6 +27,11 @@ namespace Reliquary.Relic
         void Update()
         {
 
+        }
+
+        public void PickedUp()
+        {
+            taken.ApplyParameter(1.0f);
         }
     }
 }
