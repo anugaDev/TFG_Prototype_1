@@ -15,7 +15,7 @@ namespace Reliquary.Hub
             hubModel = _hubModel;
             hubView = _hubView;
             
-            hubModel.playerDistance.AsObservable().Subscribe(distance =>
+            hubModel.playerProximity.AsObservable().Subscribe(distance =>
             {
                 hubView.SetPlayerDistanceToHub(distance);
             } );

@@ -7,7 +7,7 @@ namespace Reliquary.Hub
 {
     public class HubView : MonoBehaviour
     {
-        [SerializeField] private SoundParameter playerDistance;
+        [SerializeField] private SoundParameter playerProximity;
         // Start is called before the first frame update
         void Start()
         {
@@ -22,7 +22,7 @@ namespace Reliquary.Hub
 
         public void SetPlayerDistanceToHub(float distance)
         {
-            playerDistance.ApplyParameter(distance);
+            playerProximity.ApplyParameter(distance);
         }
     }
 }

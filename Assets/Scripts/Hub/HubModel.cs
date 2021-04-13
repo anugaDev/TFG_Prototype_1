@@ -9,11 +9,11 @@ namespace Reliquary.Hub
     public class HubModel
     {
         public Vector3 hubPosition;
-        public ReactiveProperty<float> playerDistance;
+        public ReactiveProperty<float> playerProximity;
 
         public HubModel()
         {
-            playerDistance = new ReactiveProperty<float>();
+            playerProximity = new ReactiveProperty<float>();
         }
     }
 }

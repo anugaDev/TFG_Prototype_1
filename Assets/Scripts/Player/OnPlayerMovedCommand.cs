@@ -17,7 +17,7 @@ namespace Reliquary.Player
 
         public void Execute(Vector3 newPosition)
         {
-            hubModel.playerDistance.Value = Vector3.Distance(hubModel.hubPosition, newPosition);
+            hubModel.playerProximity.Value = Vector3.Distance(hubModel.hubPosition, newPosition);
         }
     }
 }

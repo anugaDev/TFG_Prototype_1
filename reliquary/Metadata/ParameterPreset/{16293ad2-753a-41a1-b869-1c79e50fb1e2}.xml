@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="ParameterPreset" id="{16293ad2-753a-41a1-b869-1c79e50fb1e2}">
 		<property name="name">
-			<value>Proximity</value>
+			<value>HubProximity</value>
 		</property>
 		<relationship name="folder">
 			<destination>{d37cee9f-7aa4-4df6-9ac9-522bcbc73ccf}</destination>
@@ -13,7 +13,7 @@
 	</object>
 	<object class="GameParameter" id="{4dd0fcd9-c758-4723-8b75-bfa472a2419f}">
 		<property name="maximum">
-			<value>100</value>
+			<value>30</value>
 		</property>
 		<property name="initialValue">
 			<value>0</value>

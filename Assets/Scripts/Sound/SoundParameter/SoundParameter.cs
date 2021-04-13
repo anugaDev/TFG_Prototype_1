@@ -22,6 +22,7 @@ namespace Reliquary.Sound
             var eventInstance = soundElement.GetEvent();
 
             eventInstance.setParameterByName(parameterName, value);
+            
         }
 
     }

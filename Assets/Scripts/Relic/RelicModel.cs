@@ -9,10 +9,14 @@ namespace Reliquary.Relic
     {
         public ReactiveProperty<bool> isTaken;
         public ReactiveProperty<bool> isPlaced;
+        public ReactiveProperty<bool> Visible;
+
         
         public RelicModel()
         {
-            
+            isTaken = new ReactiveProperty<bool>();
+            isPlaced = new ReactiveProperty<bool>();
+            Visible = new ReactiveProperty<bool>();
         }
     }
 }
