@@ -1,25 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UniRx;
 using UnityEngine;
 
-public class PlayerModel
+namespace Reliquary.Player
 {
-    private float defaultSpeed;
-    private float sprintSpeed;
-    private float boost;
-    private float decelerationSpeed;
-    private float stoppingSpeed;
-    private float rotationSpeed;
-    
-    // Start is called before the first frame update
-    void Start()
+    public class PlayerModel
     {
-        
-    }
+        private PlayerConfig playerConfig;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public ReactiveProperty<BaseItemView> carriedItem;
+        public float DefaultSpeed
+        {
+            get => playerConfig.defaultSpeed;
+        }
+
+        public float RotationSpeed
+        {
+            get => playerConfig.rotationSpeed;
+        }
+
+        public PlayerModel(PlayerConfig _playerConfig)
+        {
+            playerConfig = _playerConfig;
+            
+           carriedItem = new ReactiveProperty<BaseItemView>();
+        }
     }
 }

@@ -43,5 +43,10 @@ namespace Reliquary.Sound
         {
             StopEvent();
         }
+
+        private void Update()
+        {
+            GetEvent().set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+        }
     }
 }

@@ -507,20 +507,27 @@
             <e p="HubModel.cs" t="Include" />
             <e p="HubView.cs" t="Include" />
           </e>
+          <e p="Item" t="Include">
+            <e p="BaseItemView.cs" t="Include" />
+            <e p="OnItemDropped.cs" t="Include" />
+            <e p="OnItemPickedUp.cs" t="Include" />
+            <e p="Relic" t="Include">
+              <e p="RelicController.cs" t="Include" />
+              <e p="RelicInstaller.cs" t="Include" />
+              <e p="RelicModel.cs" t="Include" />
+              <e p="RelicView.cs" t="Include" />
+            </e>
+          </e>
           <e p="MainSceneInstaller.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="OnPlayerMovedCommand.cs" t="Include" />
+            <e p="PlayerCollisionManager.cs" t="Include" />
+            <e p="PlayerConfig.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="PlayerInstaller.cs" t="Include" />
             <e p="PlayerModel.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
             <e p="PlayerView.cs" t="Include" />
-          </e>
-          <e p="Relic" t="Include">
-            <e p="RelicController.cs" t="Include" />
-            <e p="RelicInstaller.cs" t="Include" />
-            <e p="RelicModel.cs" t="Include" />
-            <e p="RelicView.cs" t="Include" />
           </e>
           <e p="Sound" t="Include">
             <e p="ListenerEntity.cs" t="Include" />

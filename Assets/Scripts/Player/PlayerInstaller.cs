@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Reliquary.Item;
 using Reliquary.Player;
 using UnityEngine;
 
@@ -14,7 +15,16 @@ namespace Reliquary.Player
         
         public void Install(OnPlayerMovedCommand _onPlayerMovedCommand, PlayerModel playerModel)
         {
-            movement.onPlayerMovedCommand = _onPlayerMovedCommand;   
+            var onItemPickedUp = new OnItemPickedUp(playerModel);
+            var onItemDropped = new OnItemDropped(playerModel);
+            
+            new PlayerController(
+                view,
+                playerModel,
+                _onPlayerMovedCommand,
+                onItemPickedUp,
+                onItemDropped
+            );
         }
     }
 }
