@@ -11,12 +11,6 @@ namespace Reliquary.Player
 
     public class PlayerView : MonoBehaviour
     {
-        [SerializeField] private KeyCode upKey = KeyCode.W;
-        [SerializeField] private KeyCode downKey = KeyCode.S;
-        [SerializeField] private KeyCode leftKey = KeyCode.A;
-        [SerializeField] private KeyCode rightKey = KeyCode.D;
-        [SerializeField] private KeyCode sprintKey = KeyCode.LeftShift;
-
         [SerializeField] private KeyCode pickUpItem = KeyCode.Space;
 
         [SerializeField] private Rigidbody rigidBody;

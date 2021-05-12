@@ -5,11 +5,11 @@ using UnityEngine;
 
 namespace Reliquary.Item
 {
-    public class OnItemPickedUp
+    public class OnItemPickedUpCommand
     {
         private PlayerModel playerModel;
 
-        public OnItemPickedUp(PlayerModel _playerModel)
+        public OnItemPickedUpCommand(PlayerModel _playerModel)
         {
             playerModel = _playerModel;
         }

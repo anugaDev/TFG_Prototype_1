@@ -7,9 +7,9 @@ namespace Reliquary.Relic
 {
     public class RelicModel
     {
-        public ReactiveProperty<bool> isTaken;
-        public ReactiveProperty<bool> isPlaced;
-        public ReactiveProperty<bool> Visible;
+        public readonly ReactiveProperty<bool> isTaken;
+        public readonly ReactiveProperty<bool> isPlaced;
+        public readonly ReactiveProperty<bool> Visible;
 
         
         public RelicModel()

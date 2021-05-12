@@ -9,13 +9,10 @@ namespace Reliquary.Player
     public class PlayerInstaller : MonoBehaviour
     {
         [SerializeField] private PlayerView view;
-
-        [SerializeField] private PlayerMovement movement;
-
         
         public void Install(OnPlayerMovedCommand _onPlayerMovedCommand, PlayerModel playerModel)
         {
-            var onItemPickedUp = new OnItemPickedUp(playerModel);
+            var onItemPickedUp = new OnItemPickedUpCommand(playerModel);
             var onItemDropped = new OnItemDropped(playerModel);
             
             new PlayerController(

@@ -11,16 +11,16 @@ namespace Reliquary.Player
     {
         private PlayerView view;
         private PlayerModel model;
-        private OnItemPickedUp onItemPickedUp;
+        private OnItemPickedUpCommand onItemPickedUpCommand;
         private OnItemDropped onItemDropped;
         private OnPlayerMovedCommand onPlayerMovedCommand;
 
-        public PlayerController(PlayerView _view, PlayerModel _model, OnPlayerMovedCommand _onPlayerMovedCommand, OnItemPickedUp _onItemPickedUp, OnItemDropped _onItemDropped)
+        public PlayerController(PlayerView _view, PlayerModel _model, OnPlayerMovedCommand _onPlayerMovedCommand, OnItemPickedUpCommand onItemPickedUpCommand, OnItemDropped _onItemDropped)
         {
             view = _view;
             model = _model;
             onPlayerMovedCommand = _onPlayerMovedCommand;
-            onItemPickedUp = _onItemPickedUp;
+            this.onItemPickedUpCommand = onItemPickedUpCommand;
             onItemDropped = _onItemDropped;
 
             view.Controller = this;
@@ -29,7 +29,7 @@ namespace Reliquary.Player
         public void PickUpItem(GameObject item)
         {
             item.transform.SetParent(view.transform);
-            onItemPickedUp.Execute(item);
+            onItemPickedUpCommand.Execute(item);
         }
 
         public bool CarryingItem()
