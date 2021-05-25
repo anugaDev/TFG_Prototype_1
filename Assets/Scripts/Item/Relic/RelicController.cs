@@ -21,6 +21,22 @@ namespace Reliquary.Relic
         public void PickUp()
         {
             model.isTaken.Value = true;
+
+            view.gameObject.layer = model.itemConfig.NonInteractableLayer;
+        }
+
+        public void Drop()
+        {
+            view.gameObject.layer = model.itemConfig.InteractableLayer;
+        }
+
+        public void IsAltarTouched(string objectID)
+        {
+            Debug.Log("ID : " + objectID);
+            if (view.tag == objectID)
+            {
+                Debug.Log("My altar touched");
+            }
         }
         
     }

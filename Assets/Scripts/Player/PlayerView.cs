@@ -12,15 +12,20 @@ namespace Reliquary.Player
     public class PlayerView : MonoBehaviour
     {
         [SerializeField] private KeyCode pickUpItem = KeyCode.Space;
+        [SerializeField] private Collider detectionTrigger;
+        [SerializeField] private LayerMask detectionLayers;
 
         [SerializeField] private Rigidbody rigidBody;
+
         private PlayerController controller;
 
 
         private Vector3 direction;
         private float currentSpeed;
+
         private float currentRotationSpeed;
-        private List<GameObject> collidingItems = new List<GameObject>();
+        //private List<GameObject> collidingItems = new List<GameObject>();
+
 
         public PlayerController Controller
         {
@@ -42,10 +47,9 @@ namespace Reliquary.Player
                 else
                 {
                     controller.PickUpItem(GetClosestItem());
-
                 }
-               
-               
+
+
         }
 
         private void UpdateMovement()
@@ -65,7 +69,7 @@ namespace Reliquary.Player
 
             movement *= currentSpeed * Time.fixedDeltaTime;
             rigidBody.velocity = movement;
-            
+
             controller.PlayerMoved(transform.position);
         }
 
@@ -78,23 +82,52 @@ namespace Reliquary.Player
 
         private GameObject GetClosestItem()
         {
-            GameObject closestItem = collidingItems.First();
 
-            foreach (var item in collidingItems)
+            Debug.Log("LookForItems");
+
+            var colliders = Physics.OverlapBox(detectionTrigger.gameObject.transform.position,
+                detectionTrigger.bounds.size / 2, Quaternion.identity, detectionLayers);
+
+            /*Physics.OverlapBox(detectionTrigger.bounds.center, detectionTrigger.bounds.size,
+                detectionTrigger.transform.forward, out hit, detectionTrigger.transform.rotation,
+                detectionTrigger.bounds.size.magnitude, detectionTrigger.gameObject.layer)*/
+
+            if (colliders.Length > 0)
             {
-                if (Vector3.Distance(item.transform.position, transform.position) <
-                    Vector3.Distance(closestItem.transform.position, transform.position))
+                Debug.Log("objects found");
+
+                var closestItem = colliders.First();
+                foreach (var item in colliders)
                 {
-                    closestItem = item;
+                    if (Vector3.Distance(item.transform.position, transform.position) <
+                        Vector3.Distance(closestItem.transform.position, transform.position))
+                    {
+                        closestItem = item;
+                    }
                 }
+
+                return closestItem.gameObject;
+
+            }
+            else
+            {
+                Debug.Log("objects not found");
             }
 
-            return closestItem;
+
+
+            return null;
         }
 
-        private void OnTriggerEnter(Collider other)
+    }
+}
+
+
+
+        /*private void OnTriggerEnter(Collider other)
         {
             collidingItems.Add(other.gameObject);
+            
         }
 
         private void OnTriggerExit(Collider other)
@@ -106,5 +139,5 @@ namespace Reliquary.Player
         }
 
     }
-}
+}*/
 

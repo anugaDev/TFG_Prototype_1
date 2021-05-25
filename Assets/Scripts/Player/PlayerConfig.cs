@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "PlayerConfiguration", menuName = "PlayerConfiguration")]
+[CreateAssetMenu(fileName = "PlayerConfiguration", menuName = "Config/PlayerConfiguration")]
 public class PlayerConfig : ScriptableObject
 {
     public float defaultSpeed;

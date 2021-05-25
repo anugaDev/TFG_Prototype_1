@@ -14,6 +14,7 @@ namespace Reliquary
         [SerializeField] private RelicInstaller relicInstaller;
 
         [SerializeField] private PlayerConfig playerConfig;
+        [SerializeField] private ItemConfig itemConfig;
         private void Awake()
         {
             var hubModel = new HubModel();
@@ -22,7 +23,7 @@ namespace Reliquary
             
             for (var i = 0; i < relicModels.Length; i++)
             {
-                relicModels[i] = new RelicModel();
+                relicModels[i] = new RelicModel(itemConfig);
             }
             
             

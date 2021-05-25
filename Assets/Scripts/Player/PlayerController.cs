@@ -28,8 +28,12 @@ namespace Reliquary.Player
 
         public void PickUpItem(GameObject item)
         {
-            item.transform.SetParent(view.transform);
-            onItemPickedUpCommand.Execute(item);
+            if (item != null)
+            {
+                item.transform.SetParent(view.transform);
+                onItemPickedUpCommand.Execute(item);
+            }
+         
         }
 
         public bool CarryingItem()

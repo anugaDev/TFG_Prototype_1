@@ -95,8 +95,8 @@ namespace Reliquary.Sound
                 {
                     var result = new EventDescription();
                     pendingEvent.Value.start();
-                    Debug.Log("PENDING EVENT STARTED . Element" + pendingEvent.Key.EventName + " , " +
-                              pendingEvent.Value.getDescription(out result));
+                    /*Debug.Log("PENDING EVENT STARTED . Element" + pendingEvent.Key.EventName + " , " +
+                              pendingEvent.Value.getDescription(out result));*/
 
                     RuntimeManager.StudioSystem.update();
                     
