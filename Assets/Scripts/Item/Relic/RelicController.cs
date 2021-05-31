@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UniRx;
+using Reliquary.Hub;
 using UnityEngine;
 
 namespace Reliquary.Relic
@@ -9,19 +10,22 @@ namespace Reliquary.Relic
     {
         private readonly RelicModel model;
         private readonly RelicView view;
+        private readonly OnRelicTouchingAltar onRelicTouchingAltar;
         
-        public RelicController(RelicModel _model, RelicView _view)
+        public RelicController(RelicModel _model, RelicView _view, OnRelicTouchingAltar _onRelicTouchingAltar)
         {
             model = _model;
             view = _view;
+            onRelicTouchingAltar = _onRelicTouchingAltar;
+
 
             view.Controller = this;
+
         }
 
         public void PickUp()
         {
             model.isTaken.Value = true;
-
             view.gameObject.layer = model.itemConfig.NonInteractableLayer;
         }
 
@@ -30,12 +34,12 @@ namespace Reliquary.Relic
             view.gameObject.layer = model.itemConfig.InteractableLayer;
         }
 
-        public void IsAltarTouched(string objectID)
+        public void IsAltarTouched(Transform objectTransform)
         {
-            Debug.Log("ID : " + objectID);
-            if (view.tag == objectID)
+            if (view.tag == objectTransform.tag)
             {
-                Debug.Log("My altar touched");
+                onRelicTouchingAltar.Execute(view.transform, objectTransform, model);
+                view.PlayPlacedSound();
             }
         }
         

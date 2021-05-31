@@ -10,6 +10,7 @@ namespace Reliquary.Player
         private PlayerConfig playerConfig;
 
         public ReactiveProperty<BaseItemView> carriedItem;
+        public bool isPlacing;
         public float DefaultSpeed
         {
             get => playerConfig.defaultSpeed;
@@ -23,8 +24,8 @@ namespace Reliquary.Player
         public PlayerModel(PlayerConfig _playerConfig)
         {
             playerConfig = _playerConfig;
-            
-           carriedItem = new ReactiveProperty<BaseItemView>();
+            isPlacing = false;
+           carriedItem = new ReactiveProperty<BaseItemView>(null);
         }
     }
 }

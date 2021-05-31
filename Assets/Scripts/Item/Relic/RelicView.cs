@@ -9,6 +9,7 @@ namespace Reliquary.Relic
     {
 
         [SerializeField] private ASoundElement loop;
+        [SerializeField] private ASoundElement placed;
         [SerializeField] private SoundParameter taken;
         [SerializeField] private Collider collider;
         private RelicController controller;
@@ -17,9 +18,10 @@ namespace Reliquary.Relic
         {
             set => controller = value;
         }
+
         private void Awake()
         {
-            SoundController.PlayElement(loop);
+            PlaySoundLoop();
         }
         
         public override void PickUp()
@@ -27,6 +29,7 @@ namespace Reliquary.Relic
             controller.PickUp();
             collider.isTrigger = true;
             taken.ApplyParameter(1.0f);
+            
         }
         public override void Drop()
         {
@@ -36,7 +39,17 @@ namespace Reliquary.Relic
         }
         private void OnTriggerEnter(Collider other)
         {
-            controller.IsAltarTouched(other.transform.tag);
+            controller.IsAltarTouched(other.transform);
+        }
+
+        public void PlaySoundLoop()
+        {
+            SoundController.PlayElement(loop);
+        }
+
+        public void PlayPlacedSound()
+        {
+            SoundController.PlayElement(placed);
         }
     }
 

@@ -20,27 +20,29 @@ namespace Reliquary.Sound.Studio
             {
                 bar = new ReactiveProperty<int>();
                 beat = new ReactiveProperty<int>();
+                marker = new ReactiveProperty<string>();
             }
             public ReactiveProperty<int> bar;
             public ReactiveProperty<int> beat;
-            
+            public ReactiveProperty<string> marker;
+
         }
         
         public EventTimelineInfo eventTimelineInfo;
         
         private GCHandle timelineHandle;
     
-        FMOD.Studio.EVENT_CALLBACK beatCallback;
+        FMOD.Studio.EVENT_CALLBACK eventCallback;
     
         public StudioEventProxy(EventInstance eventInstance)
         {
             eventTimelineInfo = new EventTimelineInfo();
-            beatCallback = new FMOD.Studio.EVENT_CALLBACK(StudioBeatEvent);
+            eventCallback = new FMOD.Studio.EVENT_CALLBACK(StudioBeatEvent);
     
             timelineHandle = GCHandle.Alloc(eventTimelineInfo, GCHandleType.Pinned);
             eventInstance.setUserData(GCHandle.ToIntPtr(timelineHandle));
     
-            eventInstance.setCallback(beatCallback, FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_BEAT);
+            eventInstance.setCallback(eventCallback, FMOD.Studio.EVENT_CALLBACK_TYPE.ALL);
     
     
         }    
@@ -62,15 +64,38 @@ namespace Reliquary.Sound.Studio
             {
                 GCHandle timelineHandle = GCHandle.FromIntPtr(timelineInfoPtr);
                 var timelineInfo = (EventTimelineInfo) timelineHandle.Target;
+
+                switch (type)
+                {                    
+                    case EVENT_CALLBACK_TYPE.TIMELINE_BEAT:
+                        
+                        var parameter =
+                            (FMOD.Studio.TIMELINE_BEAT_PROPERTIES) Marshal.PtrToStructure(parameters,
+                                typeof(FMOD.Studio.TIMELINE_BEAT_PROPERTIES));
     
-                var parameter =
-                    (FMOD.Studio.TIMELINE_BEAT_PROPERTIES) Marshal.PtrToStructure(parameters,
-                        typeof(FMOD.Studio.TIMELINE_BEAT_PROPERTIES));
-    
-                timelineInfo.bar.Value = parameter.bar;
-                timelineInfo.beat.Value = parameter.beat;
+                        timelineInfo.bar.Value = parameter.bar;
+                        timelineInfo.beat.Value = parameter.beat;
+                        
+                        break;
+                    
+                    case EVENT_CALLBACK_TYPE.TIMELINE_MARKER:
+                        
+                        var marker = (FMOD.Studio.TIMELINE_MARKER_PROPERTIES) Marshal.PtrToStructure(parameters,
+                            typeof(FMOD.Studio.TIMELINE_MARKER_PROPERTIES));
+                        //IntPtr namePtr = parameters; 
+                        int nameLen = 0;
+                        while (Marshal.ReadByte(parameters, nameLen) != 0) ++nameLen;
+                        byte[] buffer = new byte[nameLen];
+                        Marshal.Copy(parameters, buffer, 0, buffer.Length);
+                        string name = Encoding.UTF8.GetString(buffer, 0, nameLen);
                 
-    
+                        /*if (name == "HIGH")
+                        {
+                            UnityEngine.Debug.Log("Reached high intensity marker");
+                        }*/
+                        timelineInfo.marker.Value = marker.name;
+                        break;
+                }
             }
            
             return FMOD.RESULT.OK;
@@ -93,8 +118,7 @@ namespace Reliquary.Sound.Studio
             }
             else if (timelineInfoPtr != IntPtr.Zero)
             {
-                FMOD.Studio.TIMELINE_MARKER_PROPERTIES marker =
-                    (FMOD.Studio.TIMELINE_MARKER_PROPERTIES) Marshal.PtrToStructure(parameters,
+                var marker = (FMOD.Studio.TIMELINE_MARKER_PROPERTIES) Marshal.PtrToStructure(parameters,
                         typeof(FMOD.Studio.TIMELINE_MARKER_PROPERTIES));
                 //IntPtr namePtr = parameters; 
                 int nameLen = 0;
@@ -103,10 +127,14 @@ namespace Reliquary.Sound.Studio
                 Marshal.Copy(parameters, buffer, 0, buffer.Length);
                 string name = Encoding.UTF8.GetString(buffer, 0, nameLen);
                 
+                GCHandle timelineHandle = GCHandle.FromIntPtr(timelineInfoPtr);
+                var timelineInfo = (EventTimelineInfo) timelineHandle.Target;
+                
                 /*if (name == "HIGH")
                 {
                     UnityEngine.Debug.Log("Reached high intensity marker");
                 }*/
+                timelineInfo.marker.Value = marker.name;
 
             }
 

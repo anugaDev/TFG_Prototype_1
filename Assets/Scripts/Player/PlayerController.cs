@@ -24,6 +24,7 @@ namespace Reliquary.Player
             onItemDropped = _onItemDropped;
 
             view.Controller = this;
+            PlayerMoved(view.transform.position);
         }
 
         public void PickUpItem(GameObject item)
@@ -32,18 +33,25 @@ namespace Reliquary.Player
             {
                 item.transform.SetParent(view.transform);
                 onItemPickedUpCommand.Execute(item);
+                view.PlayPickUpSound();
             }
          
         }
 
-        public bool CarryingItem()
+        public bool IsCarryingItem()
         {
             return model.carriedItem.Value != null;
+        }
+
+        public bool IsPowering()
+        {
+            return model.isPlacing;
         }
 
         public void Dropitem()
         {
             onItemDropped.Execute(model.carriedItem.Value);
+            view.PlayDropSound();
         }
 
         public float GetCurrentSpeed()

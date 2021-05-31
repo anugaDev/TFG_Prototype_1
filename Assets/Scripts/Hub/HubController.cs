@@ -7,18 +7,36 @@ namespace Reliquary.Hub
 {
     public class HubController
     {
-        private HubModel hubModel;
-        private HubView hubView;
+        private HubModel model;
+        private HubView view;
+        private OnRelicPlaced onRelicPlaced;
 
-        public HubController(HubModel _hubModel, HubView _hubView)
+        public HubController(HubModel _model, HubView _view, OnRelicPlaced _onRelicPlaced)
         {
-            hubModel = _hubModel;
-            hubView = _hubView;
+            model = _model;
+            view = _view;
+            onRelicPlaced = _onRelicPlaced;
+
+            view.Controller = this;
             
-            hubModel.playerProximity.AsObservable().Subscribe(distance =>
+            model.playerProximity.AsObservable().Subscribe(distance =>
             {
-                hubView.SetPlayerDistanceToHub(distance);
+                view.SetPlayerDistanceToHub(distance);
             } );
+            model.acquiredRelics.ObserveAdd().Subscribe(relic =>
+            {
+                view.SetNewStateParameter(HubModel.GameState.Powering);
+                view.StartCoroutine(view.PlacingRelicAnimation(model.GetPlacingTime()));
+
+            });
+        }
+
+        public void OnRelicPlaced()
+        {
+            view.SetNewStateParameter(HubModel.GameState.Walking);
+            view.PlayRelicReturnedSound();
+
+            onRelicPlaced.Execute();
         }
     }
 }

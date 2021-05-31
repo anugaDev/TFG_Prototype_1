@@ -15,9 +15,9 @@ namespace Reliquary.Relic
         
         public RelicModel(ItemConfig _itemConfig)
         {
-            isTaken = new ReactiveProperty<bool>();
-            isPlaced = new ReactiveProperty<bool>();
-            Visible = new ReactiveProperty<bool>();
+            isTaken = new ReactiveProperty<bool>(false);
+            isPlaced = new ReactiveProperty<bool>(false);
+            Visible = new ReactiveProperty<bool>(false);
 
             itemConfig = _itemConfig;
         }

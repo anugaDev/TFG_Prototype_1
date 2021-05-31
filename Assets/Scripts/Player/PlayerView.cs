@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Security;
+using Reliquary.Sound;
 using UniRx;
 using UnityEngine;
 
@@ -11,6 +12,8 @@ namespace Reliquary.Player
 
     public class PlayerView : MonoBehaviour
     {
+        [SerializeField] private ASoundElement pickUp;
+        [SerializeField] private ASoundElement drop;
         [SerializeField] private KeyCode pickUpItem = KeyCode.Space;
         [SerializeField] private Collider detectionTrigger;
         [SerializeField] private LayerMask detectionLayers;
@@ -25,8 +28,7 @@ namespace Reliquary.Player
 
         private float currentRotationSpeed;
         //private List<GameObject> collidingItems = new List<GameObject>();
-
-
+        
         public PlayerController Controller
         {
             set => controller = value;
@@ -40,7 +42,7 @@ namespace Reliquary.Player
                 RotateTowardsDirection();
 
             if (Input.GetKeyDown(pickUpItem))
-                if (controller.CarryingItem())
+                if (controller.IsCarryingItem())
                 {
                     controller.Dropitem();
                 }
@@ -48,8 +50,6 @@ namespace Reliquary.Player
                 {
                     controller.PickUpItem(GetClosestItem());
                 }
-
-
         }
 
         private void UpdateMovement()
@@ -60,7 +60,7 @@ namespace Reliquary.Player
             movement.x = Input.GetAxis("Horizontal");
             movement.z = Input.GetAxis("Vertical");
 
-            if (movement == Vector3.zero)
+            if (movement == Vector3.zero || controller.IsPowering())
                 return;
 
             currentSpeed = controller.GetCurrentSpeed();
@@ -82,19 +82,11 @@ namespace Reliquary.Player
 
         private GameObject GetClosestItem()
         {
-
-            Debug.Log("LookForItems");
-
             var colliders = Physics.OverlapBox(detectionTrigger.gameObject.transform.position,
                 detectionTrigger.bounds.size / 2, Quaternion.identity, detectionLayers);
 
-            /*Physics.OverlapBox(detectionTrigger.bounds.center, detectionTrigger.bounds.size,
-                detectionTrigger.transform.forward, out hit, detectionTrigger.transform.rotation,
-                detectionTrigger.bounds.size.magnitude, detectionTrigger.gameObject.layer)*/
-
             if (colliders.Length > 0)
             {
-                Debug.Log("objects found");
 
                 var closestItem = colliders.First();
                 foreach (var item in colliders)
@@ -113,13 +105,22 @@ namespace Reliquary.Player
             {
                 Debug.Log("objects not found");
             }
-
-
-
+            
             return null;
         }
 
+        public void PlayPickUpSound()
+        {
+            SoundController.PlayElement(pickUp);
+        }
+
+        public void PlayDropSound()
+        {
+            SoundController.PlayElement(drop);
+        }
+
     }
+    
 }
 
 

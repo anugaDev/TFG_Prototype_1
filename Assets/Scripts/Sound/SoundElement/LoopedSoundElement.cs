@@ -32,7 +32,6 @@ public class LoopedSoundElement : ASoundElement
         studioEvent = FMODUnity.RuntimeManager.CreateInstance(eventName);
         uniqueEventCreated = true;
         
-        
         FMODUnity.RuntimeManager.StudioSystem.update();
 
         studioEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));

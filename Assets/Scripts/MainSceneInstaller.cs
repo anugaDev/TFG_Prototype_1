@@ -26,12 +26,13 @@ namespace Reliquary
                 relicModels[i] = new RelicModel(itemConfig);
             }
             
-            
             var onPlayerMovedCommand = new OnPlayerMovedCommand(hubModel);
+            var onRelicTouchingAltar = new OnRelicTouchingAltar(hubModel, playerModel);
+            var onRelicPlaced = new OnRelicPlaced(hubModel,playerModel);
             
             
-            hubInstaller.Install(hubModel);
-            relicInstaller.Install(relicModels);
+            hubInstaller.Install(hubModel, onRelicPlaced);
+            relicInstaller.Install(relicModels, onRelicTouchingAltar);
             playerInstaller.Install(onPlayerMovedCommand, playerModel);
         }
     }

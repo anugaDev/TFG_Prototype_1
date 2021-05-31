@@ -11,7 +11,7 @@ namespace Reliquary.Sound
 
     public class OneShootSoundElement : ASoundElement
     {
-        private List<EventInstance> eventPool;
+        private List<EventInstance> eventPool = new List<EventInstance>();
         
         public override EventInstance GetEvent()
         {

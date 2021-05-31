@@ -9,12 +9,14 @@ namespace Reliquary.Hub
     {
         [SerializeField] private HubView view;
         
-        public void Install(HubModel _model)
+        public void Install(HubModel _model, OnRelicPlaced onRelicPlaced)
         {
             new HubController
             (
                 _model,
-                view
+                view,
+                onRelicPlaced
+                
             );
         }
     }
