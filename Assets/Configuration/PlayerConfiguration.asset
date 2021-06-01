@@ -17,4 +17,4 @@ MonoBehaviour:
   boost: 60
   decelerationSpeed: 20
   stoppingSpeed: 50
-  rotationSpeed: 30
+  rotationSpeed: 15

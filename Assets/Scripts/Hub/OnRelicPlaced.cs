@@ -22,6 +22,7 @@ namespace Reliquary.Hub
         public void Execute()
         {
             playerModel.isPlacing = false;
+            playerModel.carriedItem.Value = null;
         }
     }
 }

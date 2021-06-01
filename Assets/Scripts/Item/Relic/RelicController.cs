@@ -38,7 +38,7 @@ namespace Reliquary.Relic
         {
             if (view.tag == objectTransform.tag)
             {
-                onRelicTouchingAltar.Execute(view.transform, objectTransform, model);
+                onRelicTouchingAltar.Execute(view, objectTransform, model);
                 view.PlayPlacedSound();
             }
         }

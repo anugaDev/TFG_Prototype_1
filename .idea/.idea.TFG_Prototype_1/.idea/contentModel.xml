@@ -508,6 +508,9 @@
             <e p="HubModel.cs" t="Include" />
             <e p="HubView.cs" t="Include" />
             <e p="OnRelicPlaced.cs" t="Include" />
+            <e p="Stand" t="Include">
+              <e p="StandView.cs" t="Include" />
+            </e>
           </e>
           <e p="Item" t="Include">
             <e p="BaseItemView.cs" t="Include" />
@@ -547,8 +550,19 @@
             </e>
             <e p="StudioEventProxy.cs" t="Include" />
           </e>
+          <e p="Stalker" t="Include">
+            <e p="EStalkerStates.cs" t="Include" />
+            <e p="MazeConfiguration.cs" t="Include" />
+            <e p="OnPlayerTouched.cs" t="Include" />
+            <e p="StalkerController.cs" t="Include" />
+            <e p="StalkerInstaller.cs" t="Include" />
+            <e p="StalkerModel.cs" t="Include" />
+            <e p="StalkerView.cs" t="Include" />
+          </e>
           <e p="Utils" t="Include">
+            <e p="PlayEventOnTrigger.cs" t="Include" />
             <e p="SetActiveOnInput.cs" t="Include" />
+            <e p="SetObjectsActive.cs" t="Include" />
           </e>
         </e>
       </e>

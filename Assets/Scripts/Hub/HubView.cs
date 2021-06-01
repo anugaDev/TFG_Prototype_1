@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Reliquary.Hub.Stand;
+using Reliquary.Relic;
 using Reliquary.Sound;
+using Reliquary.Utils;
 using UnityEngine;
 
 namespace Reliquary.Hub
@@ -11,6 +14,8 @@ namespace Reliquary.Hub
         [SerializeField] private SoundParameter gameStatesLabeled;
         [SerializeField] private ASoundElement masterMusic;
         [SerializeField] private ASoundElement relicReturned;
+        [SerializeField] private StandView[] stands;
+        [SerializeField] private SetObjectsActive relicGates;
         private HubController controller;
 
         public HubController Controller
@@ -34,11 +39,29 @@ namespace Reliquary.Hub
             gameStatesLabeled.ApplyParameter((float) newState);
         }
 
-        public IEnumerator PlacingRelicAnimation(float _waitTime)
+        private StandView GetStand(RelicView _relic)
+        {
+            foreach (var stand in stands)
+            {
+                if (stand.GetRelic() == _relic)
+                {
+                    return stand;
+                }
+            }
+
+            return null;
+        } 
+
+        public IEnumerator PlacingRelicAnimation(float _waitTime, RelicView _relic)
         {
             yield return new WaitForSeconds(_waitTime);
             controller.OnRelicPlaced();
+            GetStand(_relic).SetLightActive(true);            
+        }
 
+        public void CloseGates()
+        {
+            relicGates.SetActive(true);
         }
     }
 }

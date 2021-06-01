@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UniRx;
+using UnityEditor;
 using UnityEngine;
 
 namespace Reliquary.Player
@@ -9,7 +10,8 @@ namespace Reliquary.Player
     {
         private PlayerConfig playerConfig;
 
-        public ReactiveProperty<BaseItemView> carriedItem;
+        public readonly ReactiveProperty<BaseItemView> carriedItem;
+        public readonly ReactiveProperty<bool> isDead;
         public bool isPlacing;
         public float DefaultSpeed
         {
@@ -25,7 +27,8 @@ namespace Reliquary.Player
         {
             playerConfig = _playerConfig;
             isPlacing = false;
-           carriedItem = new ReactiveProperty<BaseItemView>(null);
+            isDead= new ReactiveProperty<bool>(false);
+            carriedItem = new ReactiveProperty<BaseItemView>(null);
         }
     }
 }

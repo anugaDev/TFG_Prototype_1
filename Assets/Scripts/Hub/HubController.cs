@@ -26,17 +26,26 @@ namespace Reliquary.Hub
             model.acquiredRelics.ObserveAdd().Subscribe(relic =>
             {
                 view.SetNewStateParameter(HubModel.GameState.Powering);
-                view.StartCoroutine(view.PlacingRelicAnimation(model.GetPlacingTime()));
+                view.StartCoroutine(view.PlacingRelicAnimation(model.GetPlacingTime(), relic.Value));
 
             });
         }
 
         public void OnRelicPlaced()
         {
-            view.SetNewStateParameter(HubModel.GameState.Walking);
             view.PlayRelicReturnedSound();
 
             onRelicPlaced.Execute();
+
+            if (model.AllRelicsReturned())
+            {
+                view.CloseGates();
+                view.SetNewStateParameter(HubModel.GameState.Ending);
+            }
+            else
+            {
+                view.SetNewStateParameter(HubModel.GameState.Walking);
+            }
         }
     }
 }

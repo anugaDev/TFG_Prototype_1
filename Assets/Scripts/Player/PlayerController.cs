@@ -31,7 +31,7 @@ namespace Reliquary.Player
         {
             if (item != null)
             {
-                item.transform.SetParent(view.transform);
+                view.CarryItem(item.transform);
                 onItemPickedUpCommand.Execute(item);
                 view.PlayPickUpSound();
             }

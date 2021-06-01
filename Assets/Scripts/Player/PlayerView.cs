@@ -19,6 +19,7 @@ namespace Reliquary.Player
         [SerializeField] private LayerMask detectionLayers;
 
         [SerializeField] private Rigidbody rigidBody;
+        [SerializeField] private Transform carry;
 
         private PlayerController controller;
 
@@ -40,7 +41,10 @@ namespace Reliquary.Player
 
             if (direction != Vector3.zero)
                 RotateTowardsDirection();
+        }
 
+        private void Update()
+        {
             if (Input.GetKeyDown(pickUpItem))
                 if (controller.IsCarryingItem())
                 {
@@ -118,27 +122,31 @@ namespace Reliquary.Player
         {
             SoundController.PlayElement(drop);
         }
+        public void CarryItem(Transform itemTransform)
+        {
+            itemTransform.SetParent(carry.transform);
+            itemTransform.position = carry.position;
+
+        }
+
+
 
     }
+}
+/*private void OnTriggerEnter(Collider other)
+{
+    collidingItems.Add(other.gameObject);
     
 }
 
-
-
-        /*private void OnTriggerEnter(Collider other)
-        {
-            collidingItems.Add(other.gameObject);
-            
-        }
-
-        private void OnTriggerExit(Collider other)
-        {
-            if (collidingItems.Contains(other.gameObject))
-            {
-                collidingItems.Remove(other.gameObject);
-            }
-        }
-
+private void OnTriggerExit(Collider other)
+{
+    if (collidingItems.Contains(other.gameObject))
+    {
+        collidingItems.Remove(other.gameObject);
     }
+}
+
+}
 }*/
 

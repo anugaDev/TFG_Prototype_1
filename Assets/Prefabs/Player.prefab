@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1440973769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1440973770}
+  m_Layer: 0
+  m_Name: Carry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1440973770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440973769}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6650766054877831390}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6650766054162725536
 GameObject:
   m_ObjectHideFlags: 0
@@ -57,8 +87,9 @@ GameObject:
   - component: {fileID: 6650766054877831388}
   - component: {fileID: 6650766054877831389}
   - component: {fileID: 6650766054877831384}
-  - component: {fileID: 6650766054877831385}
   - component: {fileID: 6650766054877831387}
+  - component: {fileID: 6650766055122547511}
+  - component: {fileID: 6650766055122547512}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -78,6 +109,7 @@ Transform:
   m_LocalScale: {x: 1, y: 2.9532, z: 1}
   m_Children:
   - {fileID: 6650766054162725539}
+  - {fileID: 1440973770}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -159,30 +191,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 52
   m_CollisionDetection: 1
---- !u!114 &6650766054877831385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6650766054877831378}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c31c2adf6984b742a015a8ef496c9f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPlayerState: 0
-  upKey: 119
-  downKey: 115
-  leftKey: 97
-  rightKey: 100
-  sprintKey: 304
-  defaultSpeed: 201.3
-  sprintSpeed: 300
-  boost: 600
-  decelerationSpeed: 20
-  stoppingSpeed: 50
-  rotationSpeed: 26.74
 --- !u!114 &6650766054877831387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,9 +203,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7327b9e2c8a04e3459f4b5ee61c34a29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpItem: 102
+  pickUp: {fileID: 6650766055122547512}
+  drop: {fileID: 6650766055122547511}
+  pickUpItem: 101
   detectionTrigger: {fileID: 6650766054162725538}
   detectionLayers:
     serializedVersion: 2
     m_Bits: 512
   rigidBody: {fileID: 6650766054877831384}
+  carry: {fileID: 1440973770}
+--- !u!114 &6650766055122547511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6650766054877831378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f51eca8d43c0544ac21aa068fd4361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventName: event:/OneShots/RelicDropped
+  eventBank: 
+  playOnBeat: 1
+  beatToPlayOn: 0
+  soundParameters: []
+--- !u!114 &6650766055122547512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6650766054877831378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f51eca8d43c0544ac21aa068fd4361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventName: event:/OneShots/RelicPickedUp
+  eventBank: 
+  playOnBeat: 1
+  beatToPlayOn: 0
+  soundParameters: []

@@ -19,13 +19,13 @@ namespace Reliquary.Hub
 
         }
 
-        public void Execute(Transform relicTransform, Transform altarTransform, RelicModel relicModel)
+        public void Execute(RelicView relicView, Transform altarTransform, RelicModel relicModel)
         {
-            relicTransform.parent = altarTransform.parent;
-            relicTransform.position = altarTransform.position;
-            relicTransform.localRotation = altarTransform.localRotation;
+            relicView.transform.parent = altarTransform.parent;
+            relicView.transform.position = altarTransform.position;
+            relicView.transform.localRotation = altarTransform.localRotation;
             
-            hubModel.acquiredRelics.Add(relicModel);
+            hubModel.acquiredRelics.Add(relicView);
 
             relicModel.isTaken.Value = false;
             relicModel.isPlaced.Value = true;
