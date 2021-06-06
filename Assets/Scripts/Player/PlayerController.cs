@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Reliquary.Item;
+using UniRx;
 using UnityEngine;
 
 namespace Reliquary.Player
@@ -12,18 +13,33 @@ namespace Reliquary.Player
         private PlayerView view;
         private PlayerModel model;
         private OnItemPickedUpCommand onItemPickedUpCommand;
-        private OnItemDropped onItemDropped;
+        private OnItemDroppedCommand _onItemDroppedCommand;
         private OnPlayerMovedCommand onPlayerMovedCommand;
 
-        public PlayerController(PlayerView _view, PlayerModel _model, OnPlayerMovedCommand _onPlayerMovedCommand, OnItemPickedUpCommand onItemPickedUpCommand, OnItemDropped _onItemDropped)
+        public PlayerController(PlayerView _view, PlayerModel _model, OnPlayerMovedCommand _onPlayerMovedCommand,
+            OnItemPickedUpCommand onItemPickedUpCommand, OnItemDroppedCommand onItemDroppedCommand)
         {
             view = _view;
             model = _model;
             onPlayerMovedCommand = _onPlayerMovedCommand;
             this.onItemPickedUpCommand = onItemPickedUpCommand;
-            onItemDropped = _onItemDropped;
+            _onItemDroppedCommand = onItemDroppedCommand;
 
+            model.isDead.AsObservable().Subscribe(value =>
+            {
+                if (value)
+                {
+                    view.SetPlayerDead();
+                }
+                else
+                {
+                    view.Spawn();
+                }
+
+            });
+            
             view.Controller = this;
+            model.SetAvatar(view.gameObject);
             PlayerMoved(view.transform.position);
         }
 
@@ -35,7 +51,6 @@ namespace Reliquary.Player
                 onItemPickedUpCommand.Execute(item);
                 view.PlayPickUpSound();
             }
-         
         }
 
         public bool IsCarryingItem()
@@ -48,15 +63,51 @@ namespace Reliquary.Player
             return model.isPlacing;
         }
 
+        public void SetPraying(bool _praying)
+        {
+            model.isPraying = _praying;
+        }
+        
         public void Dropitem()
         {
-            onItemDropped.Execute(model.carriedItem.Value);
+            _onItemDroppedCommand.Execute(model.carriedItem.Value);
             view.PlayDropSound();
         }
 
-        public float GetCurrentSpeed()
+        public float GetCurrentSpeed(Vector3 _movementVector)
         {
-            return model.DefaultSpeed;
+            if (_movementVector == Vector3.zero || IsPowering() || model.isDead.Value)
+            {
+                model.currentSpeed = 0;                
+            }
+            else
+            {
+                if (model.isPraying)
+                {
+                    if (IsCarryingItem())
+                    {
+                        model.currentSpeed = 0;
+                    }
+                    else
+                    {
+                        model.currentSpeed = model.PrayingSpeed;
+                    }
+                }
+                else
+                {
+                    if (IsCarryingItem())
+                    {
+                        model.currentSpeed = model.CarryingSpeed;
+                    }
+                    else
+                    {
+                        model.currentSpeed = model.DefaultSpeed;
+                    }
+                }
+                
+            }
+            
+            return model.currentSpeed;
         }
 
         public void PlayerMoved(Vector3 currentPosition)

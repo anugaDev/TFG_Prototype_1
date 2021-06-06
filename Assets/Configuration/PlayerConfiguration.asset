@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff064737c3823a74b8726907964f2408, type: 3}
   m_Name: PlayerConfiguration
   m_EditorClassIdentifier: 
-  defaultSpeed: 200
-  sprintSpeed: 300
-  boost: 60
-  decelerationSpeed: 20
-  stoppingSpeed: 50
+  defaultSpeed: 300
+  praySpeed: 150
+  carryingSpeed: 250
   rotationSpeed: 15

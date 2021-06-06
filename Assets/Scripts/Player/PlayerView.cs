@@ -15,6 +15,7 @@ namespace Reliquary.Player
         [SerializeField] private ASoundElement pickUp;
         [SerializeField] private ASoundElement drop;
         [SerializeField] private KeyCode pickUpItem = KeyCode.Space;
+        [SerializeField] private KeyCode pray = KeyCode.LeftControl;
         [SerializeField] private Collider detectionTrigger;
         [SerializeField] private LayerMask detectionLayers;
 
@@ -25,7 +26,6 @@ namespace Reliquary.Player
 
 
         private Vector3 direction;
-        private float currentSpeed;
 
         private float currentRotationSpeed;
         //private List<GameObject> collidingItems = new List<GameObject>();
@@ -54,6 +54,8 @@ namespace Reliquary.Player
                 {
                     controller.PickUpItem(GetClosestItem());
                 }
+            
+            controller.SetPraying(Input.GetKey(pray));
         }
 
         private void UpdateMovement()
@@ -64,14 +66,15 @@ namespace Reliquary.Player
             movement.x = Input.GetAxis("Horizontal");
             movement.z = Input.GetAxis("Vertical");
 
-            if (movement == Vector3.zero || controller.IsPowering())
+            
+            var _currentSpeed = controller.GetCurrentSpeed(movement);
+
+            if (_currentSpeed <= 0)
                 return;
-
-            currentSpeed = controller.GetCurrentSpeed();
-
+            
             direction = movement;
 
-            movement *= currentSpeed * Time.fixedDeltaTime;
+            movement = Vector3.ClampMagnitude(movement, 1f) * (_currentSpeed * Time.fixedDeltaTime);
             rigidBody.velocity = movement;
 
             controller.PlayerMoved(transform.position);
@@ -127,6 +130,15 @@ namespace Reliquary.Player
             itemTransform.SetParent(carry.transform);
             itemTransform.position = carry.position;
 
+        }
+        public void SetPlayerDead()
+        {
+            
+        }
+
+        public void Spawn()
+        {
+            
         }
 
 

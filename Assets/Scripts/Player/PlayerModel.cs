@@ -8,27 +8,55 @@ namespace Reliquary.Player
 {
     public class PlayerModel
     {
-        private PlayerConfig playerConfig;
+        private PlayerConfiguration _playerConfiguration;
 
         public readonly ReactiveProperty<BaseItemView> carriedItem;
         public readonly ReactiveProperty<bool> isDead;
+        public float currentSpeed;
+        private GameObject avatar;
         public bool isPlacing;
+        public bool isPraying;
+        
         public float DefaultSpeed
         {
-            get => playerConfig.defaultSpeed;
+            get => _playerConfiguration.defaultSpeed;
+        }
+        public float CarryingSpeed
+        {
+            get => _playerConfiguration.carryingSpeed;
+        }
+        public float PrayingSpeed
+        {
+            get => _playerConfiguration.praySpeed;
         }
 
         public float RotationSpeed
         {
-            get => playerConfig.rotationSpeed;
+            get => _playerConfiguration.rotationSpeed;
         }
 
-        public PlayerModel(PlayerConfig _playerConfig)
+        public PlayerModel(PlayerConfiguration playerConfiguration)
         {
-            playerConfig = _playerConfig;
+            _playerConfiguration = playerConfiguration;
             isPlacing = false;
-            isDead= new ReactiveProperty<bool>(false);
+            isPraying = false;
+            isDead = new ReactiveProperty<bool>(false);
             carriedItem = new ReactiveProperty<BaseItemView>(null);
+        }
+
+        public GameObject GetAvatar()
+        {
+            return avatar;
+        }
+
+        public void SetAvatar(GameObject _avatar)
+        {
+            avatar = _avatar;
+        }
+
+        public bool IsCarryingItem()
+        {
+            return carriedItem.Value != null;
         }
     }
 }

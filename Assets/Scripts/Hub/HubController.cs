@@ -25,7 +25,7 @@ namespace Reliquary.Hub
             } );
             model.acquiredRelics.ObserveAdd().Subscribe(relic =>
             {
-                view.SetNewStateParameter(HubModel.GameState.Powering);
+                view.SetNewStateParameter(EGameStates.Powering);
                 view.StartCoroutine(view.PlacingRelicAnimation(model.GetPlacingTime(), relic.Value));
 
             });
@@ -40,11 +40,11 @@ namespace Reliquary.Hub
             if (model.AllRelicsReturned())
             {
                 view.CloseGates();
-                view.SetNewStateParameter(HubModel.GameState.Ending);
+                view.SetNewStateParameter(EGameStates.Ending);
             }
             else
             {
-                view.SetNewStateParameter(HubModel.GameState.Walking);
+                view.SetNewStateParameter(EGameStates.Walking);
             }
         }
     }

@@ -13,7 +13,7 @@ namespace Reliquary.Player
         public void Install(OnPlayerMovedCommand _onPlayerMovedCommand, PlayerModel playerModel)
         {
             var onItemPickedUp = new OnItemPickedUpCommand(playerModel);
-            var onItemDropped = new OnItemDropped(playerModel);
+            var onItemDropped = new OnItemDroppedCommand(playerModel);
             
             new PlayerController(
                 view,

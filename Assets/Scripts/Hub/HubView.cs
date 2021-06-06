@@ -33,7 +33,7 @@ namespace Reliquary.Hub
             SoundController.PlayElement(relicReturned);
         }
 
-        public void SetNewStateParameter(HubModel.GameState newState)
+        public void SetNewStateParameter(EGameStates newState)
         {
             gameStatesLabeled.DebugParameter();
             gameStatesLabeled.ApplyParameter((float) newState);

@@ -9,7 +9,6 @@ namespace Reliquary.Player
     public class OnPlayerMovedCommand
     {
         private HubModel hubModel;
-
         public OnPlayerMovedCommand(HubModel _hubModel)
         {
             hubModel = _hubModel;

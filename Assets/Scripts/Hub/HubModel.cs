@@ -8,12 +8,7 @@ namespace Reliquary.Hub
 {
     public class HubModel
     {
-        public enum GameState
-        {
-            Walking = 0,
-            Powering = 1,
-            Ending = 2
-        }
+        
         public Vector3 hubPosition;
         public readonly ReactiveProperty<float> playerProximity;
         public readonly ReactiveCollection<RelicView> acquiredRelics;
