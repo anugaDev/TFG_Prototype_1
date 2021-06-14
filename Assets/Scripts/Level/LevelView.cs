@@ -13,6 +13,5 @@ namespace Reliquary.Level
         {
             gameStatesLabeled.ApplyParameter((float) newState);
         }
-
     }
 }

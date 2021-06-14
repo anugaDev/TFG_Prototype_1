@@ -108,7 +108,7 @@ namespace Reliquary.Sound
             }
         }
 
-        public void StopElement(ASoundElement soundElement)
+        public static void StopElement(ASoundElement soundElement)
         {
             soundElement.StopEvent();
         }

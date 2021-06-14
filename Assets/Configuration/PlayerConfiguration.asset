@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: PlayerConfiguration
   m_EditorClassIdentifier: 
   defaultSpeed: 300
-  praySpeed: 150
+  sneakSpeed: 150
   carryingSpeed: 250
   rotationSpeed: 15

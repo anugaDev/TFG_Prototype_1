@@ -8,7 +8,7 @@ namespace Reliquary.Player
     public class PlayerConfiguration : ScriptableObject
     {
         public float defaultSpeed;
-        public float praySpeed;
+        public float sneakSpeed;
         public float carryingSpeed;
         public float rotationSpeed;
     }

@@ -9,13 +9,13 @@ namespace Reliquary.Hub
     {
         private HubModel model;
         private HubView view;
-        private OnRelicPlaced onRelicPlaced;
+        private OnPlayerRelicPlacingEnded _onPlayerRelicPlacingEnded;
 
-        public HubController(HubModel _model, HubView _view, OnRelicPlaced _onRelicPlaced)
+        public HubController(HubModel _model, HubView _view, OnPlayerRelicPlacingEnded onPlayerRelicPlacingEnded)
         {
             model = _model;
             view = _view;
-            onRelicPlaced = _onRelicPlaced;
+            _onPlayerRelicPlacingEnded = onPlayerRelicPlacingEnded;
 
             view.Controller = this;
             
@@ -35,7 +35,7 @@ namespace Reliquary.Hub
         {
             view.PlayRelicReturnedSound();
 
-            onRelicPlaced.Execute();
+            _onPlayerRelicPlacingEnded.Execute();
 
             if (model.AllRelicsReturned())
             {

@@ -11,15 +11,15 @@ namespace Reliquary.Relic
         public readonly ReactiveProperty<bool> isPlaced;
         public readonly ReactiveProperty<bool> Visible;
 
-        public readonly ItemConfig itemConfig;
+        public readonly ItemConfiguration ItemConfiguration;
         
-        public RelicModel(ItemConfig _itemConfig)
+        public RelicModel(ItemConfiguration itemConfiguration)
         {
             isTaken = new ReactiveProperty<bool>(false);
             isPlaced = new ReactiveProperty<bool>(false);
             Visible = new ReactiveProperty<bool>(false);
 
-            itemConfig = _itemConfig;
+            ItemConfiguration = itemConfiguration;
         }
     }
 }

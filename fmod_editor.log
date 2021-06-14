@@ -8,7 +8,7 @@
 [LOG] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001EC20B10728 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001BC32DC7858 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -22,303 +22,439 @@
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 135)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803A3768
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803A3768
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803A1E18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803A1E18
 [LOG] SystemI::createSound                     : filename = reliquary\Build\Desktop/loopedBank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000001EC0460C958 : node = 000001EBB77A25E0
-[LOG] SystemI::createSound                     : add node to async list : head = 000001EBB63C7D78.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC0460C958
+[LOG] SystemI::createSound                     : setdata soundi = 000001BC803AA878 : node = 000001BC39ECDD20
+[LOG] SystemI::createSound                     : add node to async list : head = 000001BC82CBB738.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803AA878
 [LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/loopedBank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 228736
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 5536
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 267488
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8352
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001EBB77A26F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC39ECDE30
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St', format=5, channels=1, frequency=48000, lengthbytes=11072, lengthpcm=1874000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.197191.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803AA878
+[LOG] SystemI::createSound                     : filename = reliquary\Build\Desktop/loopedBank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001BC803A9798 : node = 000001BC18F499A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001BC82CBB738.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803A9798
+[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/loopedBank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 267488
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8352
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC18F49AB0
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_stalkerSearch_stalkerSearch.cm-St', format=5, channels=1, frequency=48000, lengthbytes=66592, lengthpcm=495978, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.140571.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC0460C958
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC046003E8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC046003E8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC04609508
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC04609508
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC04603688
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC04603688
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC046008F8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC046008F8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC04604918
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC04604918
-[LOG] SoundI::release                          : track_stalkerSearch_stalkerSearch.cm-St (000001EC04602C68)
-[LOG] SoundI::release                          :     track_stalkerSearch_stalkerSearch.cm-St (000001EC08321028)
-[LOG] SoundI::release                          :     track_stalkerSearch_stalkerSearch.cm-St (000001EC046003E8)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC04600088
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC04600088
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC04601828
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC04601828
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC04600238
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC04600238
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803A9798
+[LOG] SoundI::release                          : track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St (000001BC803AA878)
+[LOG] SoundI::release                          :     track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St (000001BC3689F8E8)
+[LOG] SoundI::release                          :     track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St (000001BC803A9288)
+[LOG] SoundI::release                          : track_stalkerSearch_stalkerSearch.cm-St (000001BC803A4BA8)
+[LOG] SoundI::release                          :     track_stalkerSearch_stalkerSearch.cm-St (000001BC368A05E8)
+[LOG] SoundI::release                          :     track_stalkerSearch_stalkerSearch.cm-St (000001BC803A5928)
 [LOG] SystemI::createSound                     : filename = reliquary\Build\Desktop/loopedBank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000001EC046003E8 : node = 000001EBB9AA23E0
-[LOG] SystemI::createSound                     : add node to async list : head = 000001EBB63C7D78.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC046003E8
-[LOG] SystemI::createSound                     :     filename = reliquary\Build\Desktop/loopedBank.bank : mode 02010082
+[LOG] SystemI::createSound                     : setdata soundi = 000001BC803A2EF8 : node = 000001BC18F4AEE0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001BC82CBB738.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803A2EF8
 [LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/loopedBank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 267488
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8352
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC18F4AFF0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St', format=5, channels=1, frequency=48000, lengthbytes=11072, lengthpcm=1874000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.197191.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803A2EF8
+[LOG] SoundI::release                          : track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St (000001BC803A2EF8)
+[LOG] SoundI::release                          :     track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St (000001BC368A0E08)
+[LOG] SoundI::release                          :     track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St (000001BC803A3E28)
+[LOG] SystemI::createSound                     : filename = reliquary\Build\Desktop/loopedBank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001BC803A4BA8 : node = 000001BC32C0E290
+[LOG] SystemI::createSound                     : add node to async list : head = 000001BC82CBB738.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803A4BA8
+[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/loopedBank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 267488
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8352
+[LOG] SystemI::createSound                     : filename = reliquary\Build\Desktop/loopedBank.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC32C0E3A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 120
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001BC803A15A8 : node = 000001BC32C0EB50
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_stalkerSearch_stalkerSearch.cm-St', format=5, channels=1, frequency=48000, lengthbytes=66592, lengthpcm=495978, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.140571.
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001BC82CBB738.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803A4BA8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803A15A8
+[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/loopedBank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 267488
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8352
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC32C0EC60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_stalkerChase_Inst 1.cm-St', format=5, channels=1, frequency=48000, lengthbytes=106112, lengthpcm=1874000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.242354.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803A15A8
+[LOG] SoundI::release                          : track_stalkerSearch_stalkerSearch.cm-St (000001BC803A9798)
+[LOG] SoundI::release                          :     track_stalkerSearch_stalkerSearch.cm-St (000001BC368A1CA8)
+[LOG] SoundI::release                          :     track_stalkerSearch_stalkerSearch.cm-St (000001BC803A8A18)
+[LOG] SoundI::release                          : track_stalkerChase_Inst 1.cm-St (000001BC803A6BB8)
+[LOG] SoundI::release                          :     track_stalkerChase_Inst 1.cm-St (000001BC368A1628)
+[LOG] SoundI::release                          :     track_stalkerChase_Inst 1.cm-St (000001BC803A2D48)
+[LOG] SystemI::createSound                     : filename = reliquary\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001BC803A6BB8 : node = 000001BC39ECD460
+[LOG] SystemI::createSound                     : add node to async list : head = 000001BC82CBB738.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803A6BB8
+[LOG] SystemI::createSound                     : filename = reliquary\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/Master.bank', mode=0x02010082
 [LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSound                     :     setdata soundi = 000001EC04603178 : node = 000001EBB9AA2520
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 228736
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001EBB63C7D78.  list count = 0
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 5536
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 639872
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9728
+[LOG] SystemI::createSound                     :     setdata soundi = 000001BC803A44E8 : node = 000001BC39ECDAA0
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001EBB9AA24F0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001BC82CBB738.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC39ECD570
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = reliquary\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001BC803A4848 : node = 000001BC327BD490
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001BC82CBB738.  list count = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_snare_snare-St_1', format=5, channels=1, frequency=48000, lengthbytes=22432, lengthpcm=914000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.245396.
+[LOG] SystemI::createSound                     :     filename = reliquary\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001BC803AD458 : node = 000001BC327BD5D0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001BC82CBB738.  list count = 2
+[LOG] SystemI::createSound                     :     filename = reliquary\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001BC803AB958 : node = 000001BC327BD850
+[LOG] SystemI::createSound                     : add node to async list : head = 000001BC82CBB738.  list count = 3
+[LOG] SystemI::createSound                     : filename = reliquary\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001BC803AB448 : node = 000001BC327BD710
+[LOG] SystemI::createSound                     : add node to async list : head = 000001BC82CBB738.  list count = 4
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803A6BB8
+[LOG] SystemI::createSound                     : filename = reliquary\Build\Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803A44E8
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 000001BC803AC6D8 : node = 000001BC327BD990
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001BC82CBB738.  list count = 4
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 639872
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9728
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC39ECDBB0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     filename = reliquary\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001BC803ACD98 : node = 000001BC327BDAD0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001BC82CBB738.  list count = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_actionBass_actionBass-St', format=5, channels=1, frequency=48000, lengthbytes=148032, lengthpcm=768000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.501920.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803A44E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803A4848
+[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 639872
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9728
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC327BD5A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_Bells_bells-St', format=5, channels=1, frequency=48000, lengthbytes=27840, lengthpcm=768000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.097005.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803A4848
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803AD458
+[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 639872
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9728
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC327BD6E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_bass_Bass-St_1', format=5, channels=1, frequency=48000, lengthbytes=32576, lengthpcm=914000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.611497.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803AD458
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803AB958
+[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 639872
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9728
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC327BD960
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_kick_kick-St_1', format=5, channels=1, frequency=48000, lengthbytes=87104, lengthpcm=955935, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.568323.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803AB958
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803AB448
+[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 639872
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9728
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC327BD820
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_actionDrums_ambienceLoop.dup1-St', format=5, channels=1, frequency=48000, lengthbytes=134208, lengthpcm=768000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.293609.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803AB448
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803AC6D8
+[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 639872
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9728
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC327BDAA0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_choir_choir-St', format=5, channels=1, frequency=48000, lengthbytes=100480, lengthpcm=959856, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.282594.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803AC6D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803ACD98
+[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 639872
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9728
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC327BDBE0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='reliquary_hihatrender-St', format=5, channels=1, frequency=48000, lengthbytes=85536, lengthpcm=768000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.126019.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803ACD98
+[LOG] SoundI::release                          : track_actionDrums_ambienceLoop.dup1-St (000001BC803A4D58)
+[LOG] SoundI::release                          :     track_actionDrums_ambienceLoop.dup1-St (000001BC3689FDC8)
+[LOG] SoundI::release                          :     track_actionDrums_ambienceLoop.dup1-St (000001BC803A1C68)
+[LOG] SoundI::release                          : track_actionBass_actionBass-St (000001BC803A6198)
+[LOG] SoundI::release                          :     track_actionBass_actionBass-St (000001BC3689FC28)
+[LOG] SoundI::release                          :     track_actionBass_actionBass-St (000001BC803A3918)
+[LOG] SoundI::release                          : track_Bells_bells-St (000001BC803A5268)
+[LOG] SoundI::release                          :     track_Bells_bells-St (000001BC3689E088)
+[LOG] SoundI::release                          :     track_Bells_bells-St (000001BC803A2328)
+[LOG] SoundI::release                          : reliquary_hihatrender-St (000001BC803A2838)
+[LOG] SoundI::release                          :     reliquary_hihatrender-St (000001BC368A0788)
+[LOG] SoundI::release                          :     reliquary_hihatrender-St (000001BC803A6858)
+[LOG] SoundI::release                          : track_bass_Bass-St_1 (000001BC803A6F18)
+[LOG] SoundI::release                          :     track_bass_Bass-St_1 (000001BC368A0448)
+[LOG] SoundI::release                          :     track_bass_Bass-St_1 (000001BC803A1E18)
+[LOG] SoundI::release                          : track_choir_choir-St (000001BC803A4188)
+[LOG] SoundI::release                          :     track_choir_choir-St (000001BC368A12E8)
+[LOG] SoundI::release                          :     track_choir_choir-St (000001BC803A3768)
+[LOG] SoundI::release                          : track_snare_snare-St_1 (000001BC803A66A8)
+[LOG] SoundI::release                          :     track_snare_snare-St_1 (000001BC368A0928)
+[LOG] SoundI::release                          :     track_snare_snare-St_1 (000001BC803A7788)
+[LOG] SoundI::release                          : track_kick_kick-St_1 (000001BC803A1AB8)
+[LOG] SoundI::release                          :     track_kick_kick-St_1 (000001BC368A02A8)
+[LOG] SoundI::release                          :     track_kick_kick-St_1 (000001BC803A6A08)
+[LOG] SystemI::createSound                     : filename = reliquary\Build\Desktop/loopedBank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001BC803AE388 : node = 000001BC32C0E510
+[LOG] SystemI::createSound                     : add node to async list : head = 000001BC82CBB738.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803AE388
+[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/loopedBank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 267488
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8352
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC32C0E620
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St', format=5, channels=1, frequency=48000, lengthbytes=11072, lengthpcm=1874000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.197191.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803AE388
+[LOG] SystemI::createSound                     : filename = reliquary\Build\Desktop/loopedBank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001BC803A6198 : node = 000001BC18F4AC60
+[LOG] SystemI::createSound                     : add node to async list : head = 000001BC82CBB738.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803A6198
+[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/loopedBank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 267488
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8352
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC18F4AD70
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_stalkerSearch_stalkerSearch.cm-St', format=5, channels=1, frequency=48000, lengthbytes=66592, lengthpcm=495978, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.140571.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803A6198
+[LOG] SoundI::release                          : track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St (000001BC803AE388)
+[LOG] SoundI::release                          :     track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St (000001BC3689F748)
+[LOG] SoundI::release                          :     track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St (000001BC803A7938)
+[LOG] SoundI::release                          : track_stalkerSearch_stalkerSearch.cm-St (000001BC803A4BA8)
+[LOG] SoundI::release                          :     track_stalkerSearch_stalkerSearch.cm-St (000001BC3689E568)
+[LOG] SoundI::release                          :     track_stalkerSearch_stalkerSearch.cm-St (000001BC803A7278)
+[LOG] SystemI::createSound                     : filename = reliquary\Build\Desktop/loopedBank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001BC803A66A8 : node = 000001BC18F4AEE0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001BC82CBB738.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803A66A8
+[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/loopedBank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 267488
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8352
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC18F4AFF0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St', format=5, channels=1, frequency=48000, lengthbytes=11072, lengthpcm=1874000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.197191.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803A66A8
+[LOG] SoundI::release                          : track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St (000001BC803A66A8)
+[LOG] SoundI::release                          :     track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St (000001BC3689F748)
+[LOG] SoundI::release                          :     track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St (000001BC803A3918)
+[LOG] SystemI::createSound                     : filename = reliquary\Build\Desktop/loopedBank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001BC803A66A8 : node = 000001BC305EB310
+[LOG] SystemI::createSound                     : add node to async list : head = 000001BC82CBB738.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803A66A8
+[LOG] SystemI::createSound                     : filename = reliquary\Build\Desktop/loopedBank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001BC803A1C68 : node = 000001BC305EB090
+[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/loopedBank.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001BC82CBB738.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 267488
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8352
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC305EB420
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 120
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_stalkerSearch_stalkerSearch.cm-St', format=5, channels=1, frequency=48000, lengthbytes=66592, lengthpcm=495978, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.140571.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC046003E8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC04603178
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803A66A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803A1C68
 [LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/loopedBank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 228736
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 5536
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 267488
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8352
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001EBB9AA2630
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC305EB1A0
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_stalkerChase_Inst 1.cm-St', format=5, channels=1, frequency=48000, lengthbytes=106112, lengthpcm=1874000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.242354.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC04603178
-[LOG] SoundI::release                          : track_stalkerSearch_stalkerSearch.cm-St (000001EC0460C958)
-[LOG] SoundI::release                          :     track_stalkerSearch_stalkerSearch.cm-St (000001EBDDE51318)
-[LOG] SoundI::release                          :     track_stalkerSearch_stalkerSearch.cm-St (000001EC04609508)
-[LOG] SoundI::release                          : track_stalkerChase_Inst 1.cm-St (000001EC04604258)
-[LOG] SoundI::release                          :     track_stalkerChase_Inst 1.cm-St (000001EC083216A8)
-[LOG] SoundI::release                          :     track_stalkerChase_Inst 1.cm-St (000001EC04604918)
-[LOG] SystemI::createSound                     : filename = reliquary\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000001EC04604258 : node = 000001EBB9AA2660
-[LOG] SystemI::createSound                     : add node to async list : head = 000001EBB63C7D78.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC04604258
-[LOG] SystemI::createSound                     : filename = reliquary\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSound                     :     setdata soundi = 000001EC04603328 : node = 000001EBB9AA2160
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 639872
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001EBB63C7D78.  list count = 0
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10816
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001EBB9AA2770
-[LOG] SystemI::createSound                     :     filename = reliquary\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     setdata soundi = 000001EC04605F08 : node = 000001EBB9AA22A0
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001EBB63C7D78.  list count = 1
-[LOG] SystemI::createSound                     :     filename = reliquary\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 000001EC0460D6D8 : node = 000001EBB78F7D20
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001EBB63C7D78.  list count = 2
-[LOG] SystemI::createSound                     :     filename = reliquary\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 000001EC04608FF8 : node = 000001EBB78F7460
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001EBB63C7D78.  list count = 3
-[LOG] SystemI::createSound                     :     filename = reliquary\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 000001EC0460BA28 : node = 000001EBB78F76E0
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001EBB63C7D78.  list count = 4
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_snare_snare-St_1', format=5, channels=1, frequency=48000, lengthbytes=22432, lengthpcm=914000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.245396.
-[LOG] SystemI::createSound                     :     filename = reliquary\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 000001EC046096B8 : node = 000001EBB78F71E0
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001EBB63C7D78.  list count = 5
-[LOG] SystemI::createSound                     :     filename = reliquary\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 000001EC0460CE68 : node = 000001EBB78F7960
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001EBB63C7D78.  list count = 6
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC04604258
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC04603328
-[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 639872
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10816
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001EBB9AA2270
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_actionBass_actionBass-St', format=5, channels=1, frequency=48000, lengthbytes=148032, lengthpcm=768000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.501920.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC04603328
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC04605F08
-[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 639872
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10816
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001EBB9AA23B0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_Bells_bells-St', format=5, channels=1, frequency=48000, lengthbytes=27840, lengthpcm=768000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.097005.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC04605F08
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC0460D6D8
-[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 639872
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10816
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001EBB78F7E30
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_bass_Bass-St_1', format=5, channels=1, frequency=48000, lengthbytes=32576, lengthpcm=914000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.611497.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC0460D6D8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC04608FF8
-[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 639872
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10816
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001EBB78F7570
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_kick_kick-St_1', format=5, channels=1, frequency=48000, lengthbytes=87104, lengthpcm=955935, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.568323.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC04608FF8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC0460BA28
-[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 639872
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10816
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001EBB78F77F0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_actionDrums_ambienceLoop.dup1-St', format=5, channels=1, frequency=48000, lengthbytes=134208, lengthpcm=768000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.293609.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC0460BA28
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC046096B8
-[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 639872
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10816
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001EBB78F72F0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_choir_choir-St', format=5, channels=1, frequency=48000, lengthbytes=100480, lengthpcm=959856, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.282594.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC046096B8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC0460CE68
-[LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 639872
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10816
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001EBB78F7A70
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='reliquary_hihatrender-St', format=5, channels=1, frequency=48000, lengthbytes=85536, lengthpcm=768000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.126019.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC0460CE68
-[LOG] SoundI::release                          : track_bass_Bass-St_1 (000001EC046045B8)
-[LOG] SoundI::release                          :     track_bass_Bass-St_1 (000001EC083223A8)
-[LOG] SoundI::release                          :     track_bass_Bass-St_1 (000001EC04600AA8)
-[LOG] SoundI::release                          : track_actionDrums_ambienceLoop.dup1-St (000001EC04602E18)
-[LOG] SoundI::release                          :     track_actionDrums_ambienceLoop.dup1-St (000001EC08321508)
-[LOG] SoundI::release                          :     track_actionDrums_ambienceLoop.dup1-St (000001EC046008F8)
-[LOG] SoundI::release                          : track_choir_choir-St (000001EC04603EF8)
-[LOG] SoundI::release                          :     track_choir_choir-St (000001EC08322068)
-[LOG] SoundI::release                          :     track_choir_choir-St (000001EC04600598)
-[LOG] SoundI::release                          : track_actionBass_actionBass-St (000001EC046040A8)
-[LOG] SoundI::release                          :     track_actionBass_actionBass-St (000001EC08321368)
-[LOG] SoundI::release                          :     track_actionBass_actionBass-St (000001EC04603688)
-[LOG] SoundI::release                          : track_Bells_bells-St (000001EC04606928)
-[LOG] SoundI::release                          :     track_Bells_bells-St (000001EC08320808)
-[LOG] SoundI::release                          :     track_Bells_bells-St (000001EC04600748)
-[LOG] SoundI::release                          : track_snare_snare-St_1 (000001EC04601678)
-[LOG] SoundI::release                          :     track_snare_snare-St_1 (000001EC08320668)
-[LOG] SoundI::release                          :     track_snare_snare-St_1 (000001EC04601828)
-[LOG] SoundI::release                          : reliquary_hihatrender-St (000001EC04606778)
-[LOG] SoundI::release                          :     reliquary_hihatrender-St (000001EC083211C8)
-[LOG] SoundI::release                          :     reliquary_hihatrender-St (000001EC04600238)
-[LOG] SoundI::release                          : track_kick_kick-St_1 (000001EC046034D8)
-[LOG] SoundI::release                          :     track_kick_kick-St_1 (000001EC08321EC8)
-[LOG] SoundI::release                          :     track_kick_kick-St_1 (000001EC04600088)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803A1C68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803AA878
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803AA878
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803AA008
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803AA008
+[LOG] SoundI::release                          : track_stalkerSearch_stalkerSearch.cm-St (000001BC803A6198)
+[LOG] SoundI::release                          :     track_stalkerSearch_stalkerSearch.cm-St (000001BC3689EF28)
+[LOG] SoundI::release                          :     track_stalkerSearch_stalkerSearch.cm-St (000001BC803A55C8)
+[LOG] SoundI::release                          : track_stalkerChase_Inst 1.cm-St (000001BC803A15A8)
+[LOG] SoundI::release                          :     track_stalkerChase_Inst 1.cm-St (000001BC368A0C68)
+[LOG] SoundI::release                          :     track_stalkerChase_Inst 1.cm-St (000001BC803A4338)
 [LOG] SystemI::createSound                     : filename = reliquary\Build\Desktop/loopedBank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000001EC046034D8 : node = 000001EBB78F7320
-[LOG] SystemI::createSound                     : add node to async list : head = 000001EBB63C7D78.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001EC046034D8
+[LOG] SystemI::createSound                     : setdata soundi = 000001BC803A3E28 : node = 000001BC327BDC10
+[LOG] SystemI::createSound                     : add node to async list : head = 000001BC82CBB738.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001BC803A3E28
 [LOG] SystemI::createSoundInternal             :     Create name='reliquary\Build\Desktop/loopedBank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 228736
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 5536
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 267488
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8352
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001EBB78F7430
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001BC327BDD20
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_stalkerSearch_stalkerSearch.cm-St', format=5, channels=1, frequency=48000, lengthbytes=66592, lengthpcm=495978, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.140571.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001EC046034D8
-[LOG] SoundI::release                          : reliquary_hihatrender-St (000001EC0460CE68)
-[LOG] SoundI::release                          :     reliquary_hihatrender-St (000001EBDDE4E738)
-[LOG] SoundI::release                          :     reliquary_hihatrender-St (000001EC04607348)
-[LOG] SoundI::release                          : track_choir_choir-St (000001EC046096B8)
-[LOG] SoundI::release                          :     track_choir_choir-St (000001EBDDE50E38)
-[LOG] SoundI::release                          :     track_choir_choir-St (000001EC04609A18)
-[LOG] SoundI::release                          : track_actionDrums_ambienceLoop.dup1-St (000001EC0460BA28)
-[LOG] SoundI::release                          :     track_actionDrums_ambienceLoop.dup1-St (000001EBDDE514B8)
-[LOG] SoundI::release                          :     track_actionDrums_ambienceLoop.dup1-St (000001EC04607F18)
-[LOG] SoundI::release                          : track_kick_kick-St_1 (000001EC04608FF8)
-[LOG] SoundI::release                          :     track_kick_kick-St_1 (000001EBDDE4EF58)
-[LOG] SoundI::release                          :     track_kick_kick-St_1 (000001EC04606C88)
-[LOG] SoundI::release                          : track_bass_Bass-St_1 (000001EC0460D6D8)
-[LOG] SoundI::release                          :     track_bass_Bass-St_1 (000001EBDDE51998)
-[LOG] SoundI::release                          :     track_bass_Bass-St_1 (000001EC0460D018)
-[LOG] SoundI::release                          : track_Bells_bells-St (000001EC04605F08)
-[LOG] SoundI::release                          :     track_Bells_bells-St (000001EBDDE50C98)
-[LOG] SoundI::release                          :     track_Bells_bells-St (000001EC04609508)
-[LOG] SoundI::release                          : track_actionBass_actionBass-St (000001EC04603328)
-[LOG] SoundI::release                          :     track_actionBass_actionBass-St (000001EBDDE50618)
-[LOG] SoundI::release                          :     track_actionBass_actionBass-St (000001EC0460CB08)
-[LOG] SoundI::release                          : track_snare_snare-St_1 (000001EC04604258)
-[LOG] SoundI::release                          :     track_snare_snare-St_1 (000001EBDDE51318)
-[LOG] SoundI::release                          :     track_snare_snare-St_1 (000001EC0460A5E8)
-[LOG] SoundI::release                          : track_stalkerSearch_stalkerSearch.cm-St (000001EC046034D8)
-[LOG] SoundI::release                          :     track_stalkerSearch_stalkerSearch.cm-St (000001EBDDE51E78)
-[LOG] SoundI::release                          :     track_stalkerSearch_stalkerSearch.cm-St (000001EC04601828)
-[LOG] SoundI::release                          : track_stalkerChase_Inst 1.cm-St (000001EC04603178)
-[LOG] SoundI::release                          :     track_stalkerChase_Inst 1.cm-St (000001EBDDE4F438)
-[LOG] SoundI::release                          :     track_stalkerChase_Inst 1.cm-St (000001EC04604C78)
-[LOG] SoundI::release                          : track_stalkerSearch_stalkerSearch.cm-St (000001EC046003E8)
-[LOG] SoundI::release                          :     track_stalkerSearch_stalkerSearch.cm-St (000001EBDDE4FC58)
-[LOG] SoundI::release                          :     track_stalkerSearch_stalkerSearch.cm-St (000001EC04604AC8)
-[LOG] SoundI::release                          :  (000001EC093E2988)
-[LOG] SoundI::release                          :     track_stalkerWander_stalkerWander.cm-St (000001EBB9D9FA48)
-[LOG] SoundI::release                          :  (000001EC093E2538)
-[LOG] SoundI::release                          :     track_blueRelic_Blue Relic-St_1 (000001EBB9D9F3C8)
-[LOG] SoundI::release                          :  (000001EC093E2AF8)
-[LOG] SoundI::release                          :     track_redRelic_Red Relic-St_1 (000001EBB9DA0408)
-[LOG] SoundI::release                          :  (000001EC093E2818)
-[LOG] SoundI::release                          :     track_greenRelic_Green Relic-St_1 (000001EBB9D9F228)
-[LOG] SoundI::release                          :  (000001EC05C2A5B8)
-[LOG] SoundI::release                          :     RelicDropped_RelicAcquired.cm-St (000001EBB9DA00C8)
-[LOG] SoundI::release                          :  (000001EC093E26A8)
-[LOG] SoundI::release                          :     RelicPickedUp_RelicAcquired.cm-St (000001EBB9D9FD88)
-[LOG] SoundI::release                          :  (000001EC05C2A728)
-[LOG] SoundI::release                          :     relicReturned_RelicAcquired.dup1.cm-St (000001EBB9D9FF28)
-[LOG] SoundI::release                          :  (000001EC05C2AFC8)
-[LOG] SoundI::release                          :     blueRelicReturned_RelicAcquired.cm-St (000001EBB9D9F708)
-[LOG] SoundI::release                          :  (000001EC05C2A448)
-[LOG] SoundI::release                          :     greenRelicReturned_RelicAcquired.cm-St (000001EBB9D9FBE8)
-[LOG] SoundI::release                          :  (000001EC05C2A2D8)
-[LOG] SoundI::release                          :     relicReturned_reverb_RelicAcquired.dup1.cm-St (000001EC08321D28)
-[LOG] SoundI::release                          :  (000001EC05C2A898)
-[LOG] SoundI::release                          :     redRelicReturned_RelicAcquired.cm-St (000001EC08320E88)
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St', format=5, channels=1, frequency=48000, lengthbytes=11072, lengthpcm=1874000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.197191.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001BC803A3E28
+[LOG] SoundI::release                          : reliquary_hihatrender-St (000001BC803ACD98)
+[LOG] SoundI::release                          :     reliquary_hihatrender-St (000001BC3689F0C8)
+[LOG] SoundI::release                          :     reliquary_hihatrender-St (000001BC803ACA38)
+[LOG] SoundI::release                          : track_choir_choir-St (000001BC803AC6D8)
+[LOG] SoundI::release                          :     track_choir_choir-St (000001BC3689E8A8)
+[LOG] SoundI::release                          :     track_choir_choir-St (000001BC803AA878)
+[LOG] SoundI::release                          : track_actionDrums_ambienceLoop.dup1-St (000001BC803AB448)
+[LOG] SoundI::release                          :     track_actionDrums_ambienceLoop.dup1-St (000001BC368A1148)
+[LOG] SoundI::release                          :     track_actionDrums_ambienceLoop.dup1-St (000001BC803AE028)
+[LOG] SoundI::release                          : track_kick_kick-St_1 (000001BC803AB958)
+[LOG] SoundI::release                          :     track_kick_kick-St_1 (000001BC368A1CA8)
+[LOG] SoundI::release                          :     track_kick_kick-St_1 (000001BC803A9948)
+[LOG] SoundI::release                          : track_bass_Bass-St_1 (000001BC803AD458)
+[LOG] SoundI::release                          :     track_bass_Bass-St_1 (000001BC368A0FA8)
+[LOG] SoundI::release                          :     track_bass_Bass-St_1 (000001BC803AA008)
+[LOG] SoundI::release                          : track_Bells_bells-St (000001BC803A4848)
+[LOG] SoundI::release                          :     track_Bells_bells-St (000001BC3689E708)
+[LOG] SoundI::release                          :     track_Bells_bells-St (000001BC803ACBE8)
+[LOG] SoundI::release                          : track_actionBass_actionBass-St (000001BC803A44E8)
+[LOG] SoundI::release                          :     track_actionBass_actionBass-St (000001BC368A1628)
+[LOG] SoundI::release                          :     track_actionBass_actionBass-St (000001BC803A9288)
+[LOG] SoundI::release                          : track_snare_snare-St_1 (000001BC803A6BB8)
+[LOG] SoundI::release                          :     track_snare_snare-St_1 (000001BC368A0E08)
+[LOG] SoundI::release                          :     track_snare_snare-St_1 (000001BC803A3AC8)
+[LOG] SoundI::release                          : track_stalkerChase_Inst 1.cm-St (000001BC803A1C68)
+[LOG] SoundI::release                          :     track_stalkerChase_Inst 1.cm-St (000001BC3689E088)
+[LOG] SoundI::release                          :     track_stalkerChase_Inst 1.cm-St (000001BC803A3918)
+[LOG] SoundI::release                          : track_stalkerSearch_stalkerSearch.cm-St (000001BC803A66A8)
+[LOG] SoundI::release                          :     track_stalkerSearch_stalkerSearch.cm-St (000001BC368A12E8)
+[LOG] SoundI::release                          :     track_stalkerSearch_stalkerSearch.cm-St (000001BC803A1E18)
+[LOG] SoundI::release                          : track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St (000001BC803A3E28)
+[LOG] SoundI::release                          :     track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St (000001BC3689FDC8)
+[LOG] SoundI::release                          :     track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St (000001BC803A6858)
+[LOG] SoundI::release                          :  (000001BC9BAEDE88)
+[LOG] SoundI::release                          :     track_footseps3_459964__florianreichelt__footsteps-on-concrete.dup1-St (000001BC828EF428)
+[LOG] SoundI::release                          :  (000001BC9BAECEB8)
+[LOG] SoundI::release                          :     track_footseps5_459964__florianreichelt__footsteps-on-concrete.dup1-St (000001BC828EB668)
+[LOG] SoundI::release                          :  (000001BC9BAEE728)
+[LOG] SoundI::release                          :     track_footseps2_459964__florianreichelt__footsteps-on-concrete.dup1-St_1 (000001BC828EE8C8)
+[LOG] SoundI::release                          :  (000001BC9BAECBD8)
+[LOG] SoundI::release                          :     track_footseps5_459964__florianreichelt__footsteps-on-concrete.dup1-St_1 (000001BC828EC028)
+[LOG] SoundI::release                          :  (000001BC9BAEC788)
+[LOG] SoundI::release                          :     track_stalkerWander_stalkerWander.cm-St (000001BC828EEDA8)
+[LOG] SoundI::release                          :  (000001BC9BAED5E8)
+[LOG] SoundI::release                          :     track_blueRelic_Blue Relic-St_1 (000001BC828EF0E8)
+[LOG] SoundI::release                          :  (000001BC9BAED308)
+[LOG] SoundI::release                          :     track_redRelic_Red Relic-St_1 (000001BC828EEF48)
+[LOG] SoundI::release                          :  (000001BC9BAED028)
+[LOG] SoundI::release                          :     track_greenRelic_Green Relic-St_1 (000001BC828ED6E8)
+[LOG] SoundI::release                          :  (000001BC9BAEE898)
+[LOG] SoundI::release                          :     RelicDropped_RelicAcquired.cm-St (000001BC828ED888)
+[LOG] SoundI::release                          :  (000001BC9BAEDA38)
+[LOG] SoundI::release                          :     RelicPickedUp_RelicAcquired.cm-St (000001BC828EB808)
+[LOG] SoundI::release                          :  (000001BC9BAEDFF8)
+[LOG] SoundI::release                          :     relicReturned_RelicAcquired.dup1.cm-St (000001BC828EB9A8)
+[LOG] SoundI::release                          :  (000001BC9BAEDD18)
+[LOG] SoundI::release                          :     blueRelicReturned_RelicAcquired.cm-St (000001BC828EC6A8)
+[LOG] SoundI::release                          :  (000001BC9BAEE168)
+[LOG] SoundI::release                          :     greenRelicReturned_RelicAcquired.cm-St (000001BC828EBB48)
+[LOG] SoundI::release                          :  (000001BC9BAEEB78)
+[LOG] SoundI::release                          :     relicReturned_reverb_RelicAcquired.dup1.cm-St (000001BC828EBCE8)
+[LOG] SoundI::release                          :  (000001BC9BAEECE8)
+[LOG] SoundI::release                          :     redRelicReturned_RelicAcquired.cm-St (000001BC828EC848)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients

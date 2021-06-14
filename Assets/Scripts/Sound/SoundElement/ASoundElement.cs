@@ -37,6 +37,9 @@ namespace Reliquary.Sound
 
         public abstract void StopEvent();
         
+        public abstract bool IsPlaying();
+
+        
         public string EventName => eventName;
 
         private void OnDisable()
@@ -48,5 +51,6 @@ namespace Reliquary.Sound
         {
             GetEvent().set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         }
+
     }
 }

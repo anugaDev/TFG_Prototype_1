@@ -30,8 +30,6 @@ namespace Reliquary.Stalker
         
         public void SetNavMeshDestination(Transform _destination)
         {
-            Debug.Log("Set new path");
-
             navMeshAgent.SetDestination(_destination.position);
         }
 

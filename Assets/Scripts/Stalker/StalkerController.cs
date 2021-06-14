@@ -54,8 +54,6 @@ namespace Reliquary.Stalker
 
                         
                         break;
-                    case EEnemyStates.Sleep:
-                        break;
                     default:
                         throw new ArgumentOutOfRangeException(nameof(newState), newState, null);
                 }
@@ -148,8 +146,6 @@ namespace Reliquary.Stalker
                     {
                         model.currentState.Value = EEnemyStates.Wander;
                     }
-                    break;
-                case EEnemyStates.Sleep:
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();

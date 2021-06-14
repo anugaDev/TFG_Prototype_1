@@ -38,6 +38,12 @@ namespace Reliquary.Sound
                 }
             }
         }
+
+        public override bool IsPlaying()
+        {
+            return false;
+        }
+
         private EventInstance GetEventFromPool()
         {
             var eventPlaybackState = PLAYBACK_STATE.PLAYING;
@@ -54,5 +60,6 @@ namespace Reliquary.Sound
             SetNewEvent();
             return eventPool[eventPool.Count-1];
         }
+        
     }
 }

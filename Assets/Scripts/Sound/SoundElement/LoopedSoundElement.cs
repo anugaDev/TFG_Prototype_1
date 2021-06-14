@@ -36,9 +36,30 @@ public class LoopedSoundElement : ASoundElement
 
         studioEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
     }
+    
+
 
     public override void StopEvent()
     {
         studioEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
+
+    public override bool IsPlaying()
+    {
+        if (!uniqueEventCreated)
+            return false;
+
+        var result = PLAYBACK_STATE.STOPPED;
+        
+        studioEvent.getPlaybackState(out result);
+
+        if (result == PLAYBACK_STATE.PLAYING || result == PLAYBACK_STATE.STARTING)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

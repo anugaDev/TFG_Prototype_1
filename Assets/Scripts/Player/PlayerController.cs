@@ -63,9 +63,9 @@ namespace Reliquary.Player
             return model.isPlacing;
         }
 
-        public void SetPraying(bool _praying)
+        public void SetSneaking(bool _sneaking)
         {
-            model.isPraying = _praying;
+            model.isSneaking = _sneaking;
         }
         
         public void Dropitem()
@@ -78,23 +78,28 @@ namespace Reliquary.Player
         {
             if (_movementVector == Vector3.zero || IsPowering() || model.isDead.Value)
             {
-                model.currentSpeed = 0;                
+                model.currentSpeed = 0; 
+                view.StopSteps();
+
             }
             else
             {
-                if (model.isPraying)
+                if (model.isSneaking)
                 {
+                    view.StopSteps();
+
                     if (IsCarryingItem())
                     {
                         model.currentSpeed = 0;
                     }
                     else
                     {
-                        model.currentSpeed = model.PrayingSpeed;
+                        model.currentSpeed = model.SneakSpeed;
                     }
                 }
                 else
                 {
+                    view.PlaySteps();
                     if (IsCarryingItem())
                     {
                         model.currentSpeed = model.CarryingSpeed;

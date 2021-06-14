@@ -509,14 +509,14 @@
             <e p="HubInstaller.cs" t="Include" />
             <e p="HubModel.cs" t="Include" />
             <e p="HubView.cs" t="Include" />
-            <e p="OnRelicPlaced.cs" t="Include" />
+            <e p="OnPlayerRelicPlacingEnded.cs" t="Include" />
             <e p="Stand" t="Include">
               <e p="StandView.cs" t="Include" />
             </e>
           </e>
           <e p="Item" t="Include">
             <e p="BaseItemView.cs" t="Include" />
-            <e p="ItemConfig.cs" t="Include" />
+            <e p="ItemConfiguration.cs" t="Include" />
             <e p="Relic" t="Include">
               <e p="OnRelicTouchingAltar.cs" t="Include" />
               <e p="RelicController.cs" t="Include" />

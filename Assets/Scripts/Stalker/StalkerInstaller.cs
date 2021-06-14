@@ -9,7 +9,7 @@ namespace Reliquary.Stalker
     public class StalkerInstaller : MonoBehaviour
     {
         [SerializeField] private StalkerView view;
-        public void Install(OnPlayerTouchedCommand onPlayerTouchedCommand, PlayerModel _playerModel, StalkerModel _model)
+        public void Install(OnPlayerTouchedCommand onPlayerTouchedCommand, StalkerModel _model)
         {
 
             new StalkerController(_model, view, onPlayerTouchedCommand);

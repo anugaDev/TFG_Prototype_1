@@ -17,7 +17,7 @@ namespace Reliquary
         [SerializeField] private LevelInstaller[] levelInstallers;
 
         [SerializeField] private PlayerConfiguration playerConfiguration;
-        [SerializeField] private ItemConfig itemConfig;
+        [SerializeField] private ItemConfiguration itemConfiguration;
         private void Awake()
         {
             var hubModel = new HubModel();
@@ -26,13 +26,13 @@ namespace Reliquary
             
             for (var i = 0; i < relicModels.Length; i++)
             {
-                relicModels[i] = new RelicModel(itemConfig);
+                relicModels[i] = new RelicModel(itemConfiguration);
             }
             
             var onPlayerMovedCommand = new OnPlayerMovedCommand(hubModel);
             var onPlayerTouched = new OnPlayerTouchedCommand(playerModel);
             var onRelicTouchingAltar = new OnRelicTouchingAltar(hubModel, playerModel);
-            var onRelicPlaced = new OnRelicPlaced(hubModel,playerModel);
+            var onRelicPlaced = new OnPlayerRelicPlacingEnded(playerModel);
             
             
             hubInstaller.Install(hubModel, onRelicPlaced);

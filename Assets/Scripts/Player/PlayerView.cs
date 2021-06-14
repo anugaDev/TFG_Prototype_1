@@ -14,6 +14,7 @@ namespace Reliquary.Player
     {
         [SerializeField] private ASoundElement pickUp;
         [SerializeField] private ASoundElement drop;
+        [SerializeField] private ASoundElement steps;
         [SerializeField] private KeyCode pickUpItem = KeyCode.Space;
         [SerializeField] private KeyCode pray = KeyCode.LeftControl;
         [SerializeField] private Collider detectionTrigger;
@@ -37,6 +38,7 @@ namespace Reliquary.Player
 
         private void FixedUpdate()
         {
+            rigidBody.velocity = Vector3.zero;
             UpdateMovement();
 
             if (direction != Vector3.zero)
@@ -55,12 +57,11 @@ namespace Reliquary.Player
                     controller.PickUpItem(GetClosestItem());
                 }
             
-            controller.SetPraying(Input.GetKey(pray));
+            controller.SetSneaking(Input.GetKey(pray));
         }
 
         private void UpdateMovement()
         {
-            rigidBody.velocity = Vector3.zero;
             var movement = Vector3.zero;
 
             movement.x = Input.GetAxis("Horizontal");
@@ -125,6 +126,20 @@ namespace Reliquary.Player
         {
             SoundController.PlayElement(drop);
         }
+
+        public void PlaySteps()
+        {
+            if (!steps.IsPlaying())
+            {
+                SoundController.PlayElement(steps);
+            }
+        }
+        
+        public void StopSteps()
+        {
+            SoundController.StopElement(steps);
+        }
+        
         public void CarryItem(Transform itemTransform)
         {
             itemTransform.SetParent(carry.transform);
@@ -140,25 +155,7 @@ namespace Reliquary.Player
         {
             
         }
-
-
-
-    }
-}
-/*private void OnTriggerEnter(Collider other)
-{
-    collidingItems.Add(other.gameObject);
-    
-}
-
-private void OnTriggerExit(Collider other)
-{
-    if (collidingItems.Contains(other.gameObject))
-    {
-        collidingItems.Remove(other.gameObject);
     }
 }
 
-}
-}*/
 

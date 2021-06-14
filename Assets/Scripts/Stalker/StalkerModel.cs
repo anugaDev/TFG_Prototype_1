@@ -59,7 +59,7 @@ namespace Reliquary.Stalker
             }
             else if (target.currentSpeed > 0)
             {
-                return !target.isPraying;
+                return !target.isSneaking;
             }
             return false;
         }

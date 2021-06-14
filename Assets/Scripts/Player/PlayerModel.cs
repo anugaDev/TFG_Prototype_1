@@ -15,7 +15,7 @@ namespace Reliquary.Player
         public float currentSpeed;
         private GameObject avatar;
         public bool isPlacing;
-        public bool isPraying;
+        public bool isSneaking;
         
         public float DefaultSpeed
         {
@@ -25,9 +25,9 @@ namespace Reliquary.Player
         {
             get => _playerConfiguration.carryingSpeed;
         }
-        public float PrayingSpeed
+        public float SneakSpeed
         {
-            get => _playerConfiguration.praySpeed;
+            get => _playerConfiguration.sneakSpeed;
         }
 
         public float RotationSpeed
@@ -39,7 +39,7 @@ namespace Reliquary.Player
         {
             _playerConfiguration = playerConfiguration;
             isPlacing = false;
-            isPraying = false;
+            isSneaking = false;
             isDead = new ReactiveProperty<bool>(false);
             carriedItem = new ReactiveProperty<BaseItemView>(null);
         }

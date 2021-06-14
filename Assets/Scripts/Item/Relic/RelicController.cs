@@ -26,12 +26,12 @@ namespace Reliquary.Relic
         public void PickUp()
         {
             model.isTaken.Value = true;
-            view.gameObject.layer = model.itemConfig.NonInteractableLayer;
+            view.gameObject.layer = model.ItemConfiguration.NonInteractableLayer;
         }
 
         public void Drop()
         {
-            view.gameObject.layer = model.itemConfig.InteractableLayer;
+            view.gameObject.layer = model.ItemConfiguration.InteractableLayer;
         }
 
         public void IsAltarTouched(Transform objectTransform)

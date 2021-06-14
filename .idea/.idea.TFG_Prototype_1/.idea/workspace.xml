@@ -20,83 +20,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="120ad6a4-434c-4da7-8dd8-7bf38d934286" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Configuration/StalkerConfiguration.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Configuration/StalkerConfiguration.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Hub/EGameStates.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Hub/EGameStates.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerConfiguration.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/fsbcache/Desktop/19CBE186.fobj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/fsbcache/Desktop/19FD3D99.fobj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/fsbcache/Desktop/50A20D99.fobj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/fsbcache/Desktop/6ADB2BDC.fobj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/fsbcache/Desktop/702AA48D.fobj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{87039e78-2c06-422a-8920-6dfd4cf67dab}.pdc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{b0ba3965-c4d4-4f39-8f50-66415164d571}.pdc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{e6d56dfe-6668-4131-a7c4-d5bdf690dc13}.pdc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{ec0b2911-8686-44d5-ac8d-69f1ba46e21b}.pdc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{fb4bd440-5b7b-4087-a4da-38dde275cfb8}.pdc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_actionBass_actionBass-St.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_actionDrums_ambienceLoop.dup1-St.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_ambiencePad_ambienceLoop-St.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_stalkerChase_Inst 1.cm-St.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_stalkerSearch_stalkerSearch.cm-St.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_stalkerWander_stalkerWander.cm-St.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Build/Desktop/loopedBank.bank" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{7f407535-e425-4ab9-997c-e9e86ba60e0b}.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{87039e78-2c06-422a-8920-6dfd4cf67dab}.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{b0ba3965-c4d4-4f39-8f50-66415164d571}.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{e6d56dfe-6668-4131-a7c4-d5bdf690dc13}.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{ec0b2911-8686-44d5-ac8d-69f1ba46e21b}.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{fb4bd440-5b7b-4087-a4da-38dde275cfb8}.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/Bank/{72d3bd13-6e0f-45a1-8286-94c066f96a3c}.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/Event/{e628b1c2-b42d-43e7-8c1f-5fbbfa30f6ff}.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/ParameterPreset/{a4c0076d-35b8-4ddb-ad9e-21c41c691b03}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/.cache/fsbcache/Desktop/0B912092.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/.cache/fsbcache/Desktop/1BA44E98.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/.cache/fsbcache/Desktop/4A0B553C.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/.cache/fsbcache/Desktop/5632FB33.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/.cache/fsbcache/Desktop/EB901DF4.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{1758c9b0-f08d-4e94-824b-cb1765b7cff3}.pdc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{2f4193fa-726e-4850-9c77-b31d0674d68e}.pdc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{3f558563-4334-4846-acd6-195489d7ca61}.pdc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{42b40cba-4a83-41db-a317-7121385b12a7}.pdc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{7346093d-18b9-4700-a048-a2e899cfc7f9}.pdc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{7f6d0698-a176-4825-b4be-af4e871b46c8}.pdc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{83374f59-65ae-4b78-a7ba-be10e0e15485}.pdc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{92aa1b27-68da-491f-be05-efe3919f7291}.pdc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{f6672a84-edd7-473f-9bc9-1dae084f9d8b}.pdc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Assets/459964__florianreichelt__footsteps-on-concrete.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_footseps2_459964__florianreichelt__footsteps-on-concrete.dup1-St.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_footseps2_459964__florianreichelt__footsteps-on-concrete.dup1-St_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_footseps3_459964__florianreichelt__footsteps-on-concrete.dup1-St.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_footseps4_459964__florianreichelt__footsteps-on-concrete.dup1-St.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_footseps5_459964__florianreichelt__footsteps-on-concrete.dup1-St.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_footseps5_459964__florianreichelt__footsteps-on-concrete.dup1-St_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{1758c9b0-f08d-4e94-824b-cb1765b7cff3}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{2f4193fa-726e-4850-9c77-b31d0674d68e}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{3f558563-4334-4846-acd6-195489d7ca61}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{42b40cba-4a83-41db-a317-7121385b12a7}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{7346093d-18b9-4700-a048-a2e899cfc7f9}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{7f6d0698-a176-4825-b4be-af4e871b46c8}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{83374f59-65ae-4b78-a7ba-be10e0e15485}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{92aa1b27-68da-491f-be05-efe3919f7291}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{f6672a84-edd7-473f-9bc9-1dae084f9d8b}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/Event/{543eee68-8b0c-4347-967f-f6e72e3fb014}.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TFG_Prototype_1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TFG_Prototype_1/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TFG_Prototype_1/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TFG_Prototype_1/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TFG_Prototype_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TFG_Prototype_1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/StalkerMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/StalkerMaterial.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Configuration/PlayerConfiguration.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configuration/PlayerConfiguration.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Stalker.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Stalker.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSceneInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hub/HubController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hub/HubController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hub/HubModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hub/HubModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hub/HubView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hub/HubView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSceneInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainSceneInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSceneInstaller.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/OnItemDropped.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/OnItemDroppedCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/OnItemDropped.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/OnItemDroppedCommand.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/OnPlayerMovedCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/OnPlayerMovedCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerConfig.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerConfiguration.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hub/HubInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hub/HubInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hub/OnRelicPlaced.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hub/OnPlayerRelicPlacingEnded.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hub/OnRelicPlaced.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hub/OnPlayerRelicPlacingEnded.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemConfig.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemConfiguration.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/LevelInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/LevelInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/LevelView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/LevelView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerConfiguration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stalker/EStalkerStates.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stalker/EEnemyStates.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stalker/EStalkerStates.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stalker/EEnemyStates.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stalker/MazeConfiguration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stalker/MazeConfiguration.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stalker/OnPlayerTouched.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stalker/OnPlayerTouchedCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stalker/OnPlayerTouched.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stalker/OnPlayerTouchedCommand.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/SoundController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/SoundController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/ASoundElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/ASoundElement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/LoopedSoundElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/LoopedSoundElement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/OneShootSoundElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/OneShootSoundElement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stalker/EEnemyStates.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stalker/EEnemyStates.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reliquary/Build/Desktop/LoopedBeatsBank.bank" beforeDir="false" afterPath="$PROJECT_DIR$/reliquary/Build/Desktop/LoopedBeatsBank.bank" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reliquary/Build/Desktop/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/reliquary/Build/Desktop/Master.bank" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reliquary/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/reliquary/Build/Desktop/Master.strings.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reliquary/Metadata/Event/{199f9b15-fb2e-40f2-a2b3-1c942ac5dc83}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reliquary/Metadata/Event/{199f9b15-fb2e-40f2-a2b3-1c942ac5dc83}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reliquary/Metadata/ParameterPreset/{ddc82715-7d42-4922-b9c7-3b18e222d326}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reliquary/Metadata/ParameterPreset/{ddc82715-7d42-4922-b9c7-3b18e222d326}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reliquary/Build/Desktop/loopedBank.bank" beforeDir="false" afterPath="$PROJECT_DIR$/reliquary/Build/Desktop/loopedBank.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reliquary/Metadata/Event/{dfa2eab6-ea50-4521-ba6c-34b0b5bf910a}.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,93 +98,102 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stalker/OnPlayerTouchedCommand.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerInstaller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F8918D0C-C5FC-41A1-BABA-01B207A4C016/6e/5df79775/Physics.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/SoundParameter/SoundParameter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EventManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DDD600A-E596-4FE0-B21A-870E08C53748/7e/0eae4ade/BuildPipelineInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub/HubModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub/HubInstaller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/04258D1C-DC10-4424-8C2A-17A6A31A3CF7/a6/8ea362f1/PropertyAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub/Stand/StandView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/04258D1C-DC10-4424-8C2A-17A6A31A3CF7/d6/9bda5162/MonoPInvokeCallbackAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub/HubController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub/HubView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/e5/9deedd02/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/04258D1C-DC10-4424-8C2A-17A6A31A3CF7/b9/367ef528/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/c2/03527fef/IntPtr.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicInstaller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub/EGameStates.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/a2/b50c8bad/GCHandle.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInstaller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/07/855b7d42/List`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Relic/OnRelicTouchingAltar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/OnPlayerMovedCommand.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/41/610c4e6a/KeyValuePair`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/eb/65492185/AssemblyTitleAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C7D8111C-68E7-4DE4-B24F-0D8ED8598F1B/c5/83b181b5/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/3a/c0e0997e/Marshal.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/StudioEventProxy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/SoundController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/32/5c98630a/IObservable`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/ListenerEntity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/04258D1C-DC10-4424-8C2A-17A6A31A3CF7/38/7c7d1e97/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/BaseItemView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/SoundEmittedCommand.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/OnItemPickedUpCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/e5/9deedd02/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/SetObjectsActive.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/04258D1C-DC10-4424-8C2A-17A6A31A3CF7/b9/367ef528/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/PlayEventOnTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub/OnPlayerRelicPlacingEnded.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/c2/03527fef/IntPtr.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/OnPlayerMovedCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub/Stand/StandView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/a2/b50c8bad/GCHandle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/07/855b7d42/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C7D8111C-68E7-4DE4-B24F-0D8ED8598F1B/c5/83b181b5/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/41/610c4e6a/KeyValuePair`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/04258D1C-DC10-4424-8C2A-17A6A31A3CF7/02/b12c91a3/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/eb/65492185/AssemblyTitleAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub/HubController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub/HubModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub/HubView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/3a/c0e0997e/Marshal.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/32/5c98630a/IObservable`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/04258D1C-DC10-4424-8C2A-17A6A31A3CF7/e4/a8be0806/PropertyAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/ASoundElement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/04258D1C-DC10-4424-8C2A-17A6A31A3CF7/8b/4ff3c75e/KeyCode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/41/5b741b23/Encoding.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/LoopedSoundElement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/OneShootSoundElement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/StudioEventEmitter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/SetObjectsActive.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/UniRx-master/UniRx-master/Assets/Plugins/UniRx/Scripts/Observable.Conversions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/04258D1C-DC10-4424-8C2A-17A6A31A3CF7/02/b12c91a3/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/SetActiveOnInput.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/FousOnTarget.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/UniRx-master/UniRx-master/Assets/Plugins/UniRx/Scripts/Operators/OperatorObservableBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemConfig.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/ParamRefAttribute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/RuntimeUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/42/7fd2c2af/Enum.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub/EGameStates.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stalker/EEnemyStates.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/RuntimeManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/OnItemDroppedCommand.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerCollisionManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/EventRefAttribute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/UniRx-master/UniRx-master/Assets/Plugins/UniRx/Scripts/Operators/AsObservable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/Platform.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/EventHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/PlayEventOnTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/04258D1C-DC10-4424-8C2A-17A6A31A3CF7/dc/ee9535b2/Transform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/wrapper/fmod_dsp.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/wrapper/fmod.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/04258D1C-DC10-4424-8C2A-17A6A31A3CF7/38/7c7d1e97/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/wrapper/fmod_studio.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EObjectLayers.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub/OnRelicPlaced.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/LevelConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/4a/45be22e0/Collection`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/LevelController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/Timeline/FMODEventPlayable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EditorUtils.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/LevelInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/StudioEventEmitter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/LevelModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/LevelView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/LevelConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/LevelController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/LevelInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stalker/OnPlayerTouchedCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/OnItemPickedUpCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/FousOnTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub/HubController.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub/OnPlayerRelicPlacingEnded.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerCollisionManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/OnItemDroppedCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub/Stand.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub/HubModel.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/ParamRefAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/RuntimeUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicView.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/UniRx-master/UniRx-master/Assets/Plugins/UniRx/Scripts/Observable.Conversions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicController.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/RuntimeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/SoundController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/UniRx-master/UniRx-master/Assets/Plugins/UniRx/Scripts/Operators/OperatorObservableBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/ListenerEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/EventRefAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/ASoundElement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/Platform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EditorUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/EventHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/LoopedSoundElement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/wrapper/fmod_dsp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/SoundParameter/SoundParameter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/wrapper/fmod.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/wrapper/fmod_studio.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EObjectLayers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/Timeline/FMODEventPlayable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EventManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/UniRx-master/UniRx-master/Assets/Plugins/UniRx/Scripts/Operators/AsObservable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerView.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInstaller.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/SetActiveOnInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/StudioEventProxy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/SoundEmittedCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/OneShootSoundElement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub/HubInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F8918D0C-C5FC-41A1-BABA-01B207A4C016/6e/5df79775/Physics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DDD600A-E596-4FE0-B21A-870E08C53748/7e/0eae4ade/BuildPipelineInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/04258D1C-DC10-4424-8C2A-17A6A31A3CF7/a6/8ea362f1/PropertyAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/4a/45be22e0/Collection`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Relic/OnRelicTouchingAltar.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -205,9 +205,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Hub/HubInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sound/SoundParameter/SoundParameter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sound/StudioEventProxy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/OneShootSoundElement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/LoopedSoundElement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Sound/SoundController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hub/Stand/StandView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/Relic/OnRelicTouchingAltar.cs" />
@@ -223,25 +220,32 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MainSceneInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/OnItemDroppedCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stalker/OnPlayerTouchedCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hub/HubModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hub/EGameStates.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hub/HubController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hub/HubView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerConfiguration.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerConfiguration.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Stalker/EEnemyStates.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Stalker/EEnemyStates.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hub/OnRelicPlacingEnded.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hub/OnPlayerRelicPlacingEnded.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sound/SoundController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/ASoundElement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/OneShootSoundElement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/LoopedSoundElement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerView.cs" />
       </list>
     </option>
   </component>
@@ -336,6 +340,15 @@
       <workItem from="1622790964351" duration="20805000" />
       <workItem from="1622912797361" duration="5208000" />
       <workItem from="1622979110890" duration="6042000" />
+      <workItem from="1623084261156" duration="6367000" />
+      <workItem from="1623166429432" duration="4472000" />
+      <workItem from="1623262438721" duration="1081000" />
+      <workItem from="1623338578080" duration="2848000" />
+      <workItem from="1623435521550" duration="1005000" />
+      <workItem from="1623511410087" duration="13132000" />
+      <workItem from="1623591720989" duration="682000" />
+      <workItem from="1623601538206" duration="1804000" />
+      <workItem from="1623698059649" duration="4210000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{92aa1b27-68da-491f-be05-efe3919f7291}">
+		<property name="assetPath">
+			<value>track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>39.04167800453515</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6175ec48-4289-4d20-b7f3-b76219449767}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -12,17 +12,16 @@ namespace Reliquary.Level
         [SerializeField] private LevelConfiguration configuration;
         [SerializeField] private StalkerConfiguration enemyConfiguration;
         [SerializeField] private LevelView view;
-
-        [SerializeField] private StalkerInstaller[] stalkers;
+        [SerializeField] private StalkerInstaller[] enemyInstallers;
         public void Install(OnPlayerTouchedCommand onPlayerTouchedCommand, PlayerModel _playerModel)
         {
-            var _enemyModels = new StalkerModel[stalkers.Length];
+            var _enemyModels = new StalkerModel[enemyInstallers.Length];
             
-            for (var i = 0; i < stalkers.Length; i++)
+            for (var i = 0; i < enemyInstallers.Length; i++)
             {
                 var _enemyModel = new StalkerModel(configuration, enemyConfiguration, _playerModel);
                 
-                stalkers[i].Install(onPlayerTouchedCommand, _playerModel, _enemyModel);
+                enemyInstallers[i].Install(onPlayerTouchedCommand, _enemyModel);
 
                 _enemyModels[i] = _enemyModel;
             }
