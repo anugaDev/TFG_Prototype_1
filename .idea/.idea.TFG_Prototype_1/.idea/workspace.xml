@@ -20,74 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="120ad6a4-434c-4da7-8dd8-7bf38d934286" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/fsbcache/Desktop/0B912092.fobj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/fsbcache/Desktop/1BA44E98.fobj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/fsbcache/Desktop/4A0B553C.fobj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/fsbcache/Desktop/5632FB33.fobj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/fsbcache/Desktop/EB901DF4.fobj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{1758c9b0-f08d-4e94-824b-cb1765b7cff3}.pdc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{2f4193fa-726e-4850-9c77-b31d0674d68e}.pdc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{3f558563-4334-4846-acd6-195489d7ca61}.pdc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{42b40cba-4a83-41db-a317-7121385b12a7}.pdc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{7346093d-18b9-4700-a048-a2e899cfc7f9}.pdc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{7f6d0698-a176-4825-b4be-af4e871b46c8}.pdc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{83374f59-65ae-4b78-a7ba-be10e0e15485}.pdc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{92aa1b27-68da-491f-be05-efe3919f7291}.pdc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/.cache/{f6672a84-edd7-473f-9bc9-1dae084f9d8b}.pdc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Assets/459964__florianreichelt__footsteps-on-concrete.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_footseps1_459964__florianreichelt__footsteps-on-concrete.dup1-St_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_footseps2_459964__florianreichelt__footsteps-on-concrete.dup1-St.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_footseps2_459964__florianreichelt__footsteps-on-concrete.dup1-St_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_footseps3_459964__florianreichelt__footsteps-on-concrete.dup1-St.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_footseps4_459964__florianreichelt__footsteps-on-concrete.dup1-St.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_footseps5_459964__florianreichelt__footsteps-on-concrete.dup1-St.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Assets/track_footseps5_459964__florianreichelt__footsteps-on-concrete.dup1-St_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{1758c9b0-f08d-4e94-824b-cb1765b7cff3}.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{2f4193fa-726e-4850-9c77-b31d0674d68e}.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{3f558563-4334-4846-acd6-195489d7ca61}.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{42b40cba-4a83-41db-a317-7121385b12a7}.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{7346093d-18b9-4700-a048-a2e899cfc7f9}.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{7f6d0698-a176-4825-b4be-af4e871b46c8}.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{83374f59-65ae-4b78-a7ba-be10e0e15485}.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{92aa1b27-68da-491f-be05-efe3919f7291}.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/AudioFile/{f6672a84-edd7-473f-9bc9-1dae084f9d8b}.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reliquary/Metadata/Event/{543eee68-8b0c-4347-967f-f6e72e3fb014}.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TFG_Prototype_1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TFG_Prototype_1/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TFG_Prototype_1/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TFG_Prototype_1/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TFG_Prototype_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TFG_Prototype_1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configuration/PlayerConfiguration.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configuration/PlayerConfiguration.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSceneInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hub/HubController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hub/HubController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hub/HubInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hub/HubInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hub/OnRelicPlaced.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hub/OnPlayerRelicPlacingEnded.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hub/OnRelicPlaced.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hub/OnPlayerRelicPlacingEnded.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemConfig.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemConfiguration.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Relic/RelicModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/LevelInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/LevelInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/LevelView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/LevelView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/SoundController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/SoundController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/ASoundElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/ASoundElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/LoopedSoundElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/LoopedSoundElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/OneShootSoundElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/SoundElement/OneShootSoundElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stalker/EEnemyStates.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stalker/EEnemyStates.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stalker/StalkerView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reliquary/Build/Desktop/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/reliquary/Build/Desktop/Master.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reliquary/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/reliquary/Build/Desktop/Master.strings.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reliquary/Build/Desktop/loopedBank.bank" beforeDir="false" afterPath="$PROJECT_DIR$/reliquary/Build/Desktop/loopedBank.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reliquary/Metadata/Event/{dfa2eab6-ea50-4521-ba6c-34b0b5bf910a}.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -349,6 +285,7 @@
       <workItem from="1623591720989" duration="682000" />
       <workItem from="1623601538206" duration="1804000" />
       <workItem from="1623698059649" duration="4210000" />
+      <workItem from="1623862859793" duration="1786000" />
     </task>
     <servers />
   </component>

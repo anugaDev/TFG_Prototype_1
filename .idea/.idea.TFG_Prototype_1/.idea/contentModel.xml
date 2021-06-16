@@ -130,20 +130,6 @@
               </e>
             </e>
           </e>
-          <e p="MazeGenerator" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="BasicMazeGenerator.cs" t="Include" />
-              <e p="DivisionMazeGenerator.cs" t="Include" />
-              <e p="MazeCell.cs" t="Include" />
-              <e p="MazeSpawner.cs" t="Include" />
-              <e p="OldestTreeMazeGenerator.cs" t="Include" />
-              <e p="RandomTreeMazeGenerator.cs" t="Include" />
-              <e p="RecursiveMazeGenerator.cs" t="Include" />
-              <e p="RecursiveTreeMazeGenerator.cs" t="Include" />
-              <e p="RollerBall.cs" t="Include" />
-              <e p="TreeMazeGenerator.cs" t="Include" />
-            </e>
-          </e>
           <e p="UniRx" t="Include">
             <e p="UniRx-master" t="Include">
               <e p="UniRx-master" t="Include">
