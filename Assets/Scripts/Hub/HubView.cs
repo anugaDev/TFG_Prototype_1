@@ -16,6 +16,7 @@ namespace Reliquary.Hub
         [SerializeField] private ASoundElement relicReturned;
         [SerializeField] private StandView[] stands;
         [SerializeField] private SetObjectsActive relicGates;
+        [SerializeField] private GameObject victoryTrigger;
         private HubController controller;
 
         public HubController Controller
@@ -62,6 +63,11 @@ namespace Reliquary.Hub
         public void CloseGates()
         {
             relicGates.SetActive(true);
+        }
+
+        public void SetVictoryTriggerActive()
+        {
+            victoryTrigger.SetActive(true);
         }
     }
 }

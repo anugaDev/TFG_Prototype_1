@@ -8,10 +8,13 @@ namespace Reliquary.Stalker
     public class OnPlayerTouchedCommand
     {
         private PlayerModel playerModel;
+        private PlayerView playerView;
+
         
-        public OnPlayerTouchedCommand(PlayerModel _playerModel)
+        public OnPlayerTouchedCommand(PlayerModel _playerModel, PlayerView _playerView)
         {
             playerModel = _playerModel;
+            playerView = _playerView;
         }
 
         public void Execute(StalkerModel _stalkerModel)
@@ -20,6 +23,10 @@ namespace Reliquary.Stalker
 
             
             playerModel.isDead.Value = true;
+            
+            if(playerModel.IsCarryingItem())
+                playerView.Controller.Dropitem();
+            
 
         }
     }

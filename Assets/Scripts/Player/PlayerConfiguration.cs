@@ -11,5 +11,7 @@ namespace Reliquary.Player
         public float sneakSpeed;
         public float carryingSpeed;
         public float rotationSpeed;
+
+        public Vector3 spawnPosition;
     }
 }

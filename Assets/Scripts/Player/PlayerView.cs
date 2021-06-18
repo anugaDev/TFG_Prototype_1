@@ -33,6 +33,7 @@ namespace Reliquary.Player
         
         public PlayerController Controller
         {
+            get => controller;
             set => controller = value;
         }
 
@@ -48,14 +49,25 @@ namespace Reliquary.Player
         private void Update()
         {
             if (Input.GetKeyDown(pickUpItem))
-                if (controller.IsCarryingItem())
+            {
+                
+            
+                if (controller.IsDead())
                 {
-                    controller.Dropitem();
+                    controller.SetAlive();
                 }
                 else
                 {
-                    controller.PickUpItem(GetClosestItem());
+                    if (controller.IsCarryingItem())
+                    {
+                        controller.Dropitem();
+                    }
+                    else
+                    {
+                        controller.PickUpItem(GetClosestItem());
+                    }
                 }
+            }
             
             controller.SetSneaking(Input.GetKey(pray));
         }
@@ -145,15 +157,6 @@ namespace Reliquary.Player
             itemTransform.SetParent(carry.transform);
             itemTransform.position = carry.position;
 
-        }
-        public void SetPlayerDead()
-        {
-            
-        }
-
-        public void Spawn()
-        {
-            
         }
     }
 }

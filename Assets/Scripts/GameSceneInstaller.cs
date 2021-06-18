@@ -30,7 +30,7 @@ namespace Reliquary
             }
             
             var onPlayerMovedCommand = new OnPlayerMovedCommand(hubModel);
-            var onPlayerTouched = new OnPlayerTouchedCommand(playerModel);
+            var onPlayerTouched = new OnPlayerTouchedCommand(playerModel, playerInstaller.GetPlayerView());
             var onRelicTouchingAltar = new OnRelicTouchingAltar(hubModel, playerModel);
             var onRelicPlaced = new OnPlayerRelicPlacingEnded(playerModel);
             

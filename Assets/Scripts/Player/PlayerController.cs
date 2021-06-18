@@ -25,19 +25,6 @@ namespace Reliquary.Player
             this.onItemPickedUpCommand = onItemPickedUpCommand;
             _onItemDroppedCommand = onItemDroppedCommand;
 
-            model.isDead.AsObservable().Subscribe(value =>
-            {
-                if (value)
-                {
-                    view.SetPlayerDead();
-                }
-                else
-                {
-                    view.Spawn();
-                }
-
-            });
-            
             view.Controller = this;
             model.SetAvatar(view.gameObject);
             PlayerMoved(view.transform.position);
@@ -120,6 +107,19 @@ namespace Reliquary.Player
             onPlayerMovedCommand.Execute(currentPosition);
         }
 
+        public bool IsDead()
+        {
+            return model.isDead.Value;
+        }
+
+        public void SetAlive()
+        {
+            view.transform.position = model.GetSpawmPosition();
+            PlayerMoved(view.transform.position);
+            model.isDead.Value = false;
+        }
+
+        
         public float GetCurrentRotationSpeed()
         {
             return model.RotationSpeed;

@@ -23,5 +23,10 @@ namespace Reliquary.Player
                 onItemDropped
             );
         }
+
+        public PlayerView GetPlayerView()
+        {
+            return view;
+        }
     }
 }

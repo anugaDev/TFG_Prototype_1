@@ -57,8 +57,9 @@ namespace Reliquary.Stalker
                     default:
                         throw new ArgumentOutOfRangeException(nameof(newState), newState, null);
                 }
-
             });
+
+            Spawn();
         }
 
         public void PlayerTouched()
@@ -88,7 +89,7 @@ namespace Reliquary.Stalker
         }
         public void StateUpdate()
         {
-            Debug.Log("Update State " + model.currentState);
+            //Debug.Log("Update State " + model.currentState);
             
             switch (model.currentState.Value)
             {
@@ -96,7 +97,7 @@ namespace Reliquary.Stalker
 
                     if (view.IsCurrentPathCompleted())
                     {
-                        Debug.Log("Set new path");
+                        //Debug.Log("Set new path");
                         view.SetNavMeshDestination(model.GetRandomWanderDestination());
                     }
 

@@ -104,6 +104,8 @@ namespace Reliquary.Sound
             }
             else
             {
+                Debug.Log(soundElement.EventName+" position :"+soundElement.gameObject.transform.position);
+                
                 soundEvent.start();
             }
         }
@@ -175,11 +177,11 @@ namespace Reliquary.Sound
         }
         private void OnGUI()
         {
-            GUILayout.Box(String.Format("Current Beat = {0}, Currentbar = {1}",
+            /*GUILayout.Box(String.Format("Current Beat = {0}, Currentbar = {1}",
                 
                 masterTrackProxy.eventTimelineInfo.beat.Value,
                 masterTrackProxy.eventTimelineInfo.bar.Value
-            ));
+            ));*/
         }
         
         private void OnDestroy()

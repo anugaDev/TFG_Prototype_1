@@ -35,6 +35,11 @@ namespace Reliquary.Player
             get => _playerConfiguration.rotationSpeed;
         }
 
+        public Vector3 GetSpawmPosition()
+        {
+            return _playerConfiguration.spawnPosition;
+        }
+
         public PlayerModel(PlayerConfiguration playerConfiguration)
         {
             _playerConfiguration = playerConfiguration;

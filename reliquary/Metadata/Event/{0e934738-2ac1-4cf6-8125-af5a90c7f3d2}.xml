@@ -213,7 +213,7 @@
 			<value>0.49999997</value>
 		</property>
 		<property name="maximumDistance">
-			<value>200</value>
+			<value>80</value>
 		</property>
 	</object>
 	<object class="AutomationCurve" id="{21de6e13-7b64-4189-9e88-89223f68be55}">

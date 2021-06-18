@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 6650766054877831387}
   - component: {fileID: 6650766055122547511}
   - component: {fileID: 6650766055122547512}
+  - component: {fileID: 7442882078258781346}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -205,8 +206,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickUp: {fileID: 6650766055122547512}
   drop: {fileID: 6650766055122547511}
-  pickUpItem: 101
-  pray: 306
+  steps: {fileID: 7442882078258781346}
+  pickUpItem: 32
+  pray: 304
   detectionTrigger: {fileID: 6650766054162725538}
   detectionLayers:
     serializedVersion: 2
@@ -245,5 +247,22 @@ MonoBehaviour:
   eventName: event:/OneShots/RelicPickedUp
   eventBank: 
   playOnBeat: 1
+  beatToPlayOn: 0
+  soundParameters: []
+--- !u!114 &7442882078258781346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6650766054877831378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc9728992fa076941a79518c75842951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventName: event:/OneShots/PlayerSteps
+  eventBank: loopedBank
+  playOnBeat: 0
   beatToPlayOn: 0
   soundParameters: []

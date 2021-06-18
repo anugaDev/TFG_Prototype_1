@@ -20,7 +20,7 @@ namespace Reliquary.Stalker
 
         private void Awake()
         {
-            controller?.Spawn();
+            //controller?.Spawn();
         }
 
         public StalkerController Controller

@@ -487,7 +487,6 @@
           <e p="Camera" t="Include">
             <e p="FousOnTarget.cs" t="Include" />
           </e>
-          <e p="EObjectLayers.cs" t="Include" />
           <e p="GameSceneInstaller.cs" t="Include" />
           <e p="Hub" t="Include">
             <e p="EGameStates.cs" t="Include" />
@@ -553,6 +552,7 @@
             <e p="StalkerModel.cs" t="Include" />
             <e p="StalkerView.cs" t="Include" />
           </e>
+          <e p="UIController.cs" t="Include" />
           <e p="Utils" t="Include">
             <e p="PlayEventOnTrigger.cs" t="Include" />
             <e p="SetActiveOnInput.cs" t="Include" />

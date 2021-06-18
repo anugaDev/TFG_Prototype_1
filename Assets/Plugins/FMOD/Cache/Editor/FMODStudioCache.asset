@@ -155,7 +155,7 @@ MonoBehaviour:
   Path: reliquary/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637594754896317128
+  lastModified: 637594819809045975
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -279,10 +279,10 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 7420075835830831346}
-  - {fileID: 6851800307696811674}
+  - {fileID: -2543757634567565240}
+  - {fileID: -8511636487857898367}
   MinDistance: 0.49999997
-  MaxDistance: 200
+  MaxDistance: 80
   Length: 16000
 --- !u!114 &-8814683887911470759
 MonoBehaviour:
@@ -447,6 +447,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-8511636487857898367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Green Relic/GameState
+  m_EditorClassIdentifier: 
+  Name: GameState
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-8503729785147183553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1349,7 +1369,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-7135388523229663190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1409,7 +1429,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-7079409784650674172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4949,10 +4969,30 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 5975133305032251345}
+  - {fileID: -1046411451928714037}
   MinDistance: 1
-  MaxDistance: 40
+  MaxDistance: 55
   Length: 16416
+--- !u!114 &-2708161515492229520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Blue Relic/GameState
+  m_EditorClassIdentifier: 
+  Name: GameState
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-2680775194540498893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5088,6 +5128,26 @@ MonoBehaviour:
   Name: Time
   Min: 0
   Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-2543757634567565240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Green Relic/Taken
+  m_EditorClassIdentifier: 
+  Name: Taken
+  Min: 0
+  Max: 1
   Default: 0
   ID:
     data1: 0
@@ -5648,7 +5708,7 @@ MonoBehaviour:
   Path: reliquary/Build/Desktop/loopedBank.bank
   Name: loopedBank
   StudioPath: bank:/loopedBank
-  lastModified: 637594754882428399
+  lastModified: 637594819796983436
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -6031,7 +6091,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-1419121856181416586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6147,6 +6207,26 @@ MonoBehaviour:
   Name: HubProximity
   Min: 0
   Max: 30
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-1279797853372646858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Master Music/Time
+  m_EditorClassIdentifier: 
+  Name: Time
+  Min: 0
+  Max: 100
   Default: 0
   ID:
     data1: 0
@@ -6347,6 +6427,26 @@ MonoBehaviour:
   Name: Taken
   Min: 0
   Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-1046411451928714037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/StalkerEnemy/EnemyStates
+  m_EditorClassIdentifier: 
+  Name: EnemyStates
+  Min: 0
+  Max: 3
   Default: 0
   ID:
     data1: 0
@@ -7008,7 +7108,7 @@ MonoBehaviour:
   - {fileID: -9020127915902209881}
   StringsBanks:
   - {fileID: 2262855138187939938}
-  stringsBankWriteTime: 637594754896510080
+  stringsBankWriteTime: 637594819809201141
   cacheVersion: 6
 --- !u!114 &37501415845794599
 MonoBehaviour:
@@ -7294,10 +7394,10 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -1439598531912324860}
-  - {fileID: 3186720775357148572}
+  - {fileID: 2524809649784127221}
+  - {fileID: 6746694585843243078}
   MinDistance: 0.49999997
-  MaxDistance: 200
+  MaxDistance: 80
   Length: 16600
 --- !u!114 &450703326140239406
 MonoBehaviour:
@@ -7318,7 +7418,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &465397601413656086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7379,6 +7479,26 @@ MonoBehaviour:
     data1: 3881657602
     data2: 4025948847
   Exists: 0
+--- !u!114 &527024178383695480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Master Music/GameState
+  m_EditorClassIdentifier: 
+  Name: GameState
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &562555356979817840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7759,6 +7879,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &1068375494974542269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Blue Relic/Taken
+  m_EditorClassIdentifier: 
+  Name: Taken
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &1069533261788476769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8614,7 +8754,7 @@ MonoBehaviour:
   Path: reliquary/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637594754896510080
+  lastModified: 637594819809201141
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -8780,6 +8920,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &2524809649784127221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Red Relic/GameState
+  m_EditorClassIdentifier: 
+  Name: GameState
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &2526634976710768823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8840,6 +9000,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &2589981605990904312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Master Music/HubProximity
+  m_EditorClassIdentifier: 
+  Name: HubProximity
+  Min: 0
+  Max: 40
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &2644702800235177792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9181,7 +9361,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &3264559958784132280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10323,7 +10503,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &4802843305268596960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11226,7 +11406,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &6012628581775708504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11427,9 +11607,9 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 450703326140239406}
-  - {fileID: 7261371432394910149}
-  - {fileID: -7152105853290011385}
+  - {fileID: 527024178383695480}
+  - {fileID: -1279797853372646858}
+  - {fileID: 2589981605990904312}
   MinDistance: 0
   MaxDistance: 0
   Length: 32400
@@ -11677,6 +11857,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &6746694585843243078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Red Relic/Taken
+  m_EditorClassIdentifier: 
+  Name: Taken
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &6792814311548884651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11776,7 +11976,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &6875164715875805039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12196,7 +12396,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &7299872524868346004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12296,7 +12496,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &7426291918758934428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12575,7 +12775,7 @@ MonoBehaviour:
   Path: reliquary/Build/Desktop/LoopedBeatsBank.bank
   Name: LoopedBeatsBank
   StudioPath: bank:/LoopedBeatsBank
-  lastModified: 637594754890344250
+  lastModified: 637594819802956472
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -12634,7 +12834,7 @@ MonoBehaviour:
   Path: reliquary/Build/Desktop/oneShotBeatsBank.bank
   Name: oneShotBeatsBank
   StudioPath: bank:/oneShotBeatsBank
-  lastModified: 637594754903696897
+  lastModified: 637594819815419775
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -12838,10 +13038,10 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 4779149792594155278}
-  - {fileID: -7099856170908070330}
+  - {fileID: -2708161515492229520}
+  - {fileID: 1068375494974542269}
   MinDistance: 0.49999997
-  MaxDistance: 200
+  MaxDistance: 80
   Length: 16000
 --- !u!114 &8192173555568617570
 MonoBehaviour:

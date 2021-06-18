@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 442988682}
   - component: {fileID: 442988681}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Radius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -140,6 +140,9 @@ GameObject:
   - component: {fileID: 955571063}
   - component: {fileID: 955571064}
   - component: {fileID: 570367258405754187}
+  - component: {fileID: 570367258405754186}
+  - component: {fileID: 6622201916369902170}
+  - component: {fileID: 570367258405754188}
   m_Layer: 0
   m_Name: Stalker
   m_TagString: STALKER
@@ -238,6 +241,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navMeshAgent: {fileID: 955571064}
+  loop: {fileID: 570367258405754186}
+  enemyStatesLabeled: {fileID: 6622201916369902170}
   completedPathOffset: 2
   visionRadius: {fileID: 442988679}
 --- !u!195 &955571064
@@ -251,9 +256,9 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
-  m_Acceleration: 8
+  m_Acceleration: 100
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 200
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -261,7 +266,7 @@ NavMeshAgent:
   m_Height: 0.99999994
   m_BaseOffset: 0.49999997
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 2
+  m_ObstacleAvoidanceType: 3
 --- !u!54 &570367258405754187
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -278,3 +283,49 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &570367258405754186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570367258262310449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc9728992fa076941a79518c75842951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventName: event:/Loops/StalkerEnemy
+  eventBank: loopedBank
+  playOnBeat: 0
+  beatToPlayOn: 0
+  soundParameters: []
+--- !u!114 &6622201916369902170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570367258262310449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da344f6be3f2bb34392dd6ffb9d8a7aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundElements:
+  - {fileID: 570367258405754186}
+  parameterName: EnemyStates
+  defaultValue: 0
+--- !u!114 &570367258405754188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570367258262310449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c295391764f3a504fa9639ce11d281dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  view: {fileID: 955571063}

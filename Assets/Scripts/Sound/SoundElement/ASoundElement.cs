@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using FMOD.Studio;
 using FMODUnity;
 using UnityEditor;
-using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 
 namespace Reliquary.Sound

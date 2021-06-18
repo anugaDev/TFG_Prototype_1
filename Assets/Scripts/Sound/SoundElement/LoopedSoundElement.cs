@@ -36,8 +36,6 @@ public class LoopedSoundElement : ASoundElement
 
         studioEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
     }
-    
-
 
     public override void StopEvent()
     {

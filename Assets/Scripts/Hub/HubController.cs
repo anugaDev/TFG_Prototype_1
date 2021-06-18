@@ -40,6 +40,7 @@ namespace Reliquary.Hub
             if (model.AllRelicsReturned())
             {
                 view.CloseGates();
+                view.SetVictoryTriggerActive();
                 view.SetNewStateParameter(EGameStates.Ending);
             }
             else
